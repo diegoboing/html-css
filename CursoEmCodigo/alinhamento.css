@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*Em HTML é id e em CSS é #
+  em HTML é class e em CSS é .*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(4, 109, 0);
+}
+/*Precisa identificar o h1 que será diferente, depois identificar no CSS conforme abaixo.*/
+h1#principal {
+    text-align: center;
+    background-color: rgb(91, 91, 224);
+    color: white;
+}
+h2 {
+    color: rgb(71, 86, 109);
+}
+/*Para chamar a class, basta colocar o .basico (basico é a identificação criada)*/
+.basico {
+    color: rgb(189, 151, 151);
+    font-weight: bold;
+    /*É possível no meio do texto no HTML selecionar a palavra ou frase, envelopar com a tag span e adicionar o class. <span class="basico" e então fará as mesmas configurações do seletor basico.>*/
+}
+.intermediario {
+    color: rgb(82, 107, 76);
+}
+.avancado {
+    color: black;
+}
+.destaque {
+    background-color: yellow;
+    /*É possível utilizar também dois seletores no mesmo elemento class. Ex <h2 class="basico destaque" sem vírgula*/
+}

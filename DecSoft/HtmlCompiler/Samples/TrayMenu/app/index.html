@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>TrayMenu sample app</title>
+ </head>
+ <body>
+  <div id="runtime-text">
+   You must compile this sample app in order to see it working, since it's not work as expected at designtime.
+  </div> 
+  <div id="runtime-controls" style="display: none; margin-top: 20px;">
+   <button id="hide-menu-button">Hide the menu</button>
+   <button id="recreate-menu-button">Recreate the menu</button>
+   <button id="update-item-button">Update item with ID: 5</button>
+  </div>
+  <script>
+  
+   // Prepare our tray menu items
+   var
+     menuItems = JSON.stringify([
+     {
+       "id": 1,
+       "caption": "Item 1",
+	   "image": 'app/images/item_image.png',
+   	   "items": [
+   	   {
+   		 "id": 2,			   
+   	     "caption": "Subitem 1",
+   		 "image": 'app/images/item_image.png' 
+   	   },
+   	   {
+   		 "id": 3,			   
+   	     "caption": "Subitem 2",
+   		 "image": 'app/images/item_image.png' 
+   	   }]
+     },
+     {
+   	   "id": 4,
+       "caption": "Item 2",
+	   "image": 'app/images/item_image.png',
+   	   "items": [
+   	   {
+   		 "id": 5,			   
+   	     "caption": "Subitem 3",
+		 "enabled": false
+   	   },
+   	   {
+   		 "id": 6,			   
+   	     "caption": "Subitem 4",
+   		 "image": 'app/images/item_image.png',
+         "items": [
+   	       {
+   		     "id": 7,			   
+   	         "caption": "Subitem 5",
+   	    	 "image": 'app/images/item_image.png' 
+      	   },
+           {
+             "id": 8,			   
+   			 "enabled": false,
+    		 "caption": "Subitem 6",
+             "image": 'app/images/item_image.png'
+    	   }]				 
+   	   }]
+     }	   
+   ]);  
+
+   // The menu creation works only once our app has been compiled, in other words, works at runtime
+   dhc.isRuntime().then((isRuntime) => {
+   
+     if (!isRuntime) {
+	   return false;
+     }
+
+     // Ok, we are at runtime, so hide the "runtime required" text
+	 document.getElementById('runtime-text').innerHTML = '';
+	 
+	 // And we can also show the runtime controls for this sample app
+	 document.getElementById('runtime-controls').style.display = 'block';
+   
+     // Show the tray icon
+     dhc.trayMenu.showIcon();
+   
+     // Call to "dhc.trayMenu.setItems" passing the menu items map that we created above
+     dhc.trayMenu.setItems({items: menuItems})
+	  .then(() => {
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray menu has been successfully set!';
+	  },
+      (error) => {
+	    // Ops! Some error occur while creating the tray menu!
+        document.getElementById('runtime-text').innerHTML = 'An error occur while set the tray menu: ' + error;
+      }); 
+   });
+
+   document.getElementById('hide-menu-button').addEventListener('click', function () {
+    
+     // Hide the tray icon
+     dhc.trayMenu.hideIcon();	 
+   
+     // Call to "dhc.trayMenu.setItems" passing an empty array in the items property
+     dhc.trayMenu.setItems({items: JSON.stringify([])})
+	  .then(() => {
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray menu has been successfully hide!';
+	  },
+      (error) => {
+	    // Ops! Some error occur while creating the tray menu!
+        document.getElementById('runtime-text').innerHTML = 'An error occur while hide the tray menu: ' + error;
+      })       
+   }); 
+
+   document.getElementById('recreate-menu-button').addEventListener('click', function () {
+   
+     // Show the tray icon
+     dhc.trayMenu.showIcon();
+	 
+     // Call to "dhc.trayMenu.setItems" passing the menu items map that we created above
+     dhc.trayMenu.setItems({items: menuItems})
+	  .then(() => {
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray menu has been successfully set!';
+	  },
+      (error) => {
+	    // Ops! Some error occur while creating the tray menu!
+        document.getElementById('runtime-text').innerHTML = 'An error occur while set the tray menu: ' + error;
+      });      
+   });
+   
+   document.getElementById('update-item-button').addEventListener('click', function () {
+     // Call to "dhc.trayMenu.updateItem" passing the item ID and the properties to be set
+     dhc.trayMenu.updateItem({
+	   "id": 5, 
+	   "enabled": true,
+	   "caption": "New item caption", 
+	   "image": "app/images/item_image.png"
+	  })
+	  .then(() => {
+	    // The tray menu has been updated!
+	    document.getElementById('runtime-text').innerHTML = 'The item with ID: 5 has been updated!';
+	  },
+      (error) => {
+	    // Ops! Some error occur while updating the item!
+        document.getElementById('runtime-text').innerHTML = 'An error occur while update the item: ' + error;
+      });      
+   });   
+  
+   // The "dhc.events.onTrayMenuItemClick" is called when a tray menu item has been clicked
+   dhc.events.onTrayMenuItemClick = function (itemId) {
+     alert('The tray menu item with ID: ' + itemId + ' has been clicked!');
+   };
+   
+   // The "dhc.events.onTrayIconClick" is called when the tray icon has been clicked
+   dhc.events.onTrayIconClick = function () {
+     alert('The tray icon has been clicked!');
+   };   
+  </script>
+ </body>
+</html>

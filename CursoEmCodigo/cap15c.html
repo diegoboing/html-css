@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links.HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+        }
+        a { /*Configuração para o link*/
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited { /*Configuração para os links já visitados*/
+          color: darkred;  
+        }
+        a:hover { /*Configuração para o Pseudo-class onde ao passar o mouse por cima, texto fica preto e sublinha a linha.*/
+            text-decoration: underline;
+            color: black;
+        }
+        a:active { /*Link ativo é quando clica fica amarelo*/
+            color: yellow;
+        }
+        
+        .especial {
+            background-color: rgb(165, 143, 143);
+            
+        }
+        .especial::before { /*:: pseudo-elementos - .especial classe criada no link, ::before peseudo elemento before antes, after depois. Irá aparecer o que está na linha content.*/
+            content: '⇨ ';
+        }
+        .especial::after { /*Coloca informação depois do link*/
+            content: ' ⇦';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Símbolos importantes Esquerda CSS e direita HTML</h1>
+    <p>Utilizado para criar seletores personalizados.</p>
+    <ul>
+    <p><li>#   = id</li>
+        <li>.  = class</li>
+        <li>:  = Pseudo-class</li>
+        <li>:: = Pseudo-elements</li>
+    </ul></p>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositório do Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UC5gvSZMCd6E6HwdVfugMACw" target="_blank" class="especial" >Canal do YouTube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=XPa7M2WP9AI&t=35s" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+
+    <h1>Pseudo-class</h1>
+    <p></p> São palavras que definem estado de elementos dentro da HTML</p>
+
+    <h1>Pseudo-elemntos</h1>
+    <p>Podem agir nas classes, nos Ids e nos elementos.</p>
+
+
+    <center> <a href="index.html" target="_self" rel="prev">Página inicial</a></center>
+</body>
+</html>

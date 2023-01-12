@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Clipboard sample app</title>
+ </head>
+ <body>
+ 
+  <textarea id="clipboard-textarea" style="width: 400px; height: 300px;">Sample text</textarea> 
+  
+  <br />
+  
+  <button id="copy-to-clipboard-button">Copy to clipboard</button>
+  <button id="cut-to-clipboard-button">Cut to clipboard</button>
+  <button id="paste-from-clipboard-button">Paste from clipboard</button>
+
+  <script>
+    // More information at: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard
+  
+    document.getElementById('copy-to-clipboard-button').addEventListener('click', function () {	
+	  var 
+	    textToClipboard = document.querySelector("#clipboard-textarea").value;
+	
+      navigator.clipboard.writeText(textToClipboard).then(function() {
+        alert('The textarea text has been copied to the clipboard!');       
+      }, function() {
+        alert('Some error occur while set the text to the clipboard!');
+      });	
+	});
+	
+    document.getElementById('cut-to-clipboard-button').addEventListener('click', function () {	
+	  var 
+	    textToClipboard = document.querySelector("#clipboard-textarea").value;
+	
+      navigator.clipboard.writeText(textToClipboard).then(function() {
+        document.querySelector("#clipboard-textarea").value = '';	  
+        alert('The textarea text has been cut to the clipboard!');       
+      }, function() {
+        alert('Some error occur while set the text to the clipboard!');
+      });	
+	});		
+	
+    document.getElementById('paste-from-clipboard-button').addEventListener('click', function () {
+	
+      navigator.clipboard.readText().then(function (clipboardText) {
+	    document.getElementById("clipboard-textarea").value = clipboardText;
+		alert('The clipboard text has been pasted into the textarea!');
+	  });
+	});	
+  </script>
+ </body>
+</html>

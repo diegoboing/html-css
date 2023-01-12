@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>ExtractFile sample app</title>
+ </head>
+ <body>
+  <div>
+   <button id="extract-file-1-button">Extract /sample.txt</button>
+   <button id="extract-file-2-button">Extract /subfolder/sample.txt</button>
+   <div id="designtime-text"></div>
+  </div> 
+  <script>
+  
+   dhc.isRuntime().then((isRuntime) => {
+     if (!isRuntime) {
+	   document.getElementById('extract-file-1-button').setAttribute('disabled', true); 
+	   document.getElementById('extract-file-2-button').setAttribute('disabled', true); 
+	   document.getElementById('designtime-text').innerHTML = 'Compile this app: files extract works only at runtime!';
+	 }
+   });  
+  
+   document.getElementById('extract-file-1-button').addEventListener('click', function () {
+     dhc.dialogs.saveFile({
+       title: 'Save sample.txt',
+	   fileName: 'sample.txt',
+       fileTypes: 'Text files|*.txt',
+       overwritePrompt: true	  
+	 }).then((filePath) => {
+	   if (filePath !== '') {	
+         dhc.files.extractFile({
+		   sourceFile: '/sample.txt',
+           targetFile: filePath
+         }).then(() => {
+           alert('The file has been extracted!');   
+         },
+         (error) => {
+           alert('An error occur: ' + error);
+         });	
+	   }
+	 });	 
+   });
+   
+   document.getElementById('extract-file-2-button').addEventListener('click', function () {
+     dhc.dialogs.saveFile({
+       title: 'Save sample.txt',
+	   fileName: 'sample.txt',
+       fileTypes: 'Text files|*.txt',
+       overwritePrompt: true	  
+	 }).then((filePath) => {
+	   if (filePath !== '') {	
+         dhc.files.extractFile({
+		   sourceFile: '/subfolder/sample.txt',
+           targetFile: filePath
+         }).then(() => {
+           alert('The file has been extracted!');   
+         },
+         (error) => {
+           alert('An error occur: ' + error);
+         });	
+	   }
+	 });	 
+   });   
+  </script>
+ </body>
+</html>

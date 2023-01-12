@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Signature sample app</title>
+ </head>
+ <body>
+
+  <canvas id="signature-canvas" style="border: red solid 1px;"></canvas>
+  <hr />  
+  <button id="save-canvas-to-file-button">Save the signature to a file</button>
+
+  <script src="signature_pad.min.js"></script>  
+  <script>  
+   var 
+     signatureCanvas = document.getElementById('signature-canvas'),
+	 signatureObject = new SignaturePad(signatureCanvas);
+   
+   window.document.getElementById('save-canvas-to-file-button').addEventListener('click', function () {
+
+     if (signatureObject.isEmpty()) {
+       alert("Please provide draw a signature first.");
+	   return false;
+     }
+
+     dhc.dialogs.saveFile({
+       title: 'Save a PNG file',
+	   fileName: 'my_signature.png',
+       fileTypes: 'PNG files|*.png',
+       overwritePrompt: true	  
+ 	 }).then((filePath) => {
+	 
+	   if (filePath !== '') {
+	   
+	     // Get a blob from the canvas control
+         signatureCanvas.toBlob(function (blob) {
+		 
+		   // Once we get the blob, prepare a FileReader to read it
+           var 
+		     reader = new FileReader();
+			 
+		   // Read the blob as a Base64 string
+           reader.readAsDataURL(blob); 
+		   
+		   // Once we read the blob with the FileReader
+           reader.onloadend = function() {
+		   
+		     // Get the Base64 string from the readed blob
+             var 
+			   // Note that in this specific case we no need the first Base64 header part, 
+			   // so we skip it with split, getting only the pure Base64 string
+		       base64data = reader.result.split(',')[1];                
+
+             // Now we can save the Base64 into a file, after internally decode it by HTML Compiler
+             dhc.base64.decodeToFile({
+               filePath: filePath,
+               contents: base64data
+             }).then(() => {
+               alert('The PNG file has been written!');   
+             },
+             (error) => {
+               alert('An error occur: ' + error);
+             });
+           }
+	     });
+ 	   }
+	 });	
+
+   }, false);
+   
+   
+  </script>
+ </body>
+</html>

@@ -1,0 +1,6 @@
+
+This is a sample file which is included in our app's executables,
+and, we can extract then at runtime into the user's computer.
+
+This file is placed in a subfolder, so we must indicate it when extract:
+see the app sample index.html for more details.

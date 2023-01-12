@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>OpenWindow sample app</title>
+ </head>
+ <body>
+  <div>
+   This sample works in design mode, however, works as expected (opened the link in a new app executable window) at runtime, so compile this app to see it properly working.
+  </div>
+  <div style="margin-top: 20px;">
+   <a href="https://www.decsoftutils.com/" target="_blank">Open https://www.decsoftutils.com/ in a new app window</a>	
+   <br />
+   <a href="https://www.decsoftutils.com/htmlcompiler/" target="_blank">Open https://www.decsoftutils.com/htmlcompiler/ in a new app window</a>	
+   <br />
+   <a href="https://www.decsoftutils.com/appbuilder/" target="_blank">Open https://www.decsoftutils.com/appbuilder/ in a new app window</a>	
+  </div>
+  <script>
+    // Match every link with target=_blank on this page
+    document.querySelectorAll('a[target="_blank"]').forEach(function (element) {
+	
+	  // Add to every link a click event handler
+	  element.addEventListener('click', function (event) {
+	  
+	    // Prevent the default link behaviour
+	    event.preventDefault();
+		
+		// Save into the app local storage the link URL
+	    window.localStorage.setItem('url', event.target.href);
+		
+		// Open redirect.html (see this file) to redirect to the link URL
+	    window.open('redirect.html');		
+	  });
+	});
+  </script>
+ </body>
+</html>

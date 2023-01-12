@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitelist>
+	<site id="DockSite">
+		<zone kind="VERT">
+			<zone kind="TABS" activetab="5" size="929" dsize="1" isspace="1">
+				<zone kind="PANEL"/>
+				<zone kind="PANEL" id="ProgramHelpDockPanel" visible="0"/>
+				<zone kind="PANEL" id="ProgramAboutDockPanel" visible="0"/>
+				<zone kind="PANEL" id="ProgramWebBrowserDockPanel" visible="0"/>
+				<zone kind="PANEL" id="ProgramOptionsDockPanel" visible="0"/>
+				<zone kind="PANEL" id="ProgramWelcomeDockPanel" visible="1"/>
+			</zone>
+			<zone kind="PANEL" autohide="1" id="ProgramMessagesDockPanel" visible="1" hiddenwidth="1415" hiddenheight="161" size="161"/>
+		</zone>
+	</site>
+</sitelist>

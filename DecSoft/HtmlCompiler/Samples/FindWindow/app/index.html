@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>FindWindow sample app</title>
+ </head>
+ <body>
+  <div>
+   <label for="window-caption-input">Window's caption</label>
+   <input type="text" id="window-caption-input" placeholder="Write the window's caption to be checked" style="width: 280px;" />
+   <button id="check-window-caption-button">Check the window's caption</button>
+  </div>
+  <script>
+  
+   dhc.window.getTitle().then((title) => {
+     window.document.getElementById('window-caption-input').value = title;
+   });     
+
+   window.document.getElementById('check-window-caption-button').addEventListener('click', function () {
+     
+	 var  
+	   windowCaption = window.document.getElementById('window-caption-input').value;
+
+     if (windowCaption.trim() === '') {
+	   alert("Please, provide the window's caption to be checked");
+	   return false;
+	 }
+
+     dhc.shell.windows().then((captions) => {
+       if (captions.includes(windowCaption)) {
+	     alert("Yes! The provided window's caption is in the list!");
+	   } else {
+	     alert("Nope! The provided window's caption is NOT in the list!");	   
+	   }
+     });   
+
+   }, false);
+
+
+
+  </script>
+ </body>
+</html>

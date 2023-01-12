@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Geolocation sample app</title>
+ </head>
+ <body>
+  <div id="result">
+  </div>
+  <div>
+   <button id="get-geolocation-button">Press here to get the user geolocation</button> 
+  </div> 
+  <script>
+   document.getElementById('get-geolocation-button').addEventListener('click', function () {
+   
+     // You can get more information at https://developer.mozilla.org/docs/Web/API/Geolocation/
+     var options = {
+       enableHighAccuracy: true,
+       timeout: 5000,
+       maximumAge: 0
+     };
+
+     function success(pos) {
+       var html = '';
+       var crd = pos.coords;
+       html += 'Your current position is: <br />';
+       html += 'Latitude : ' + crd.latitude + '<br />';
+       html += 'Longitude: ' + crd.longitude + '<br />';
+       html += 'More or less ' + crd.accuracy + ' meters. <hr />';
+	   document.getElementById('result').innerHTML = html;
+     };
+
+     function error(err) {
+	   document.getElementById('result').innerHTML = 'ERROR(' + err.code + '): ' + err.message;
+     };
+
+     navigator.geolocation.getCurrentPosition(success, error, options);
+   });
+  </script>
+ </body>
+</html>

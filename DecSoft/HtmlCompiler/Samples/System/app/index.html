@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>System sample app</title>
+ </head>
+ <body>
+  <div>
+   <button id="logoff-button">Logoff</button>
+   <button id="reboot-button">Reboot</button>
+   <button id="shutdown-button">Shutdown</button>
+   <div id="designtime-text"></div>
+  </div> 
+  <script>
+  
+   dhc.isRuntime().then((isRuntime) => {
+     if (!isRuntime) {
+	   document.getElementById('logoff-button').setAttribute('disabled', true); 
+	   document.getElementById('reboot-button').setAttribute('disabled', true); 
+	   document.getElementById('shutdown-button').setAttribute('disabled', true); 
+	   document.getElementById('designtime-text').innerHTML = 'Compile this app: these system actions works only at runtime!';
+	 }
+   });  
+  
+   document.getElementById('logoff-button').addEventListener('click', function () {
+     dhc.system.logoff()
+	 .then(() => {
+       alert('Logoff successfully!');
+     },
+     (error) => {
+       alert('An error occur while logoff: ' + error);
+     }); 	 
+   });
+   
+   document.getElementById('reboot-button').addEventListener('click', function () {
+     dhc.system.reboot()
+	 .then(() => {
+       alert('Reboot successfully!');
+     },
+     (error) => {
+       alert('An error occur while reboot: ' + error);
+     }); 	 
+   });   
+   
+   document.getElementById('shutdown-button').addEventListener('click', function () {
+     dhc.system.shutdown()
+	 .then(() => {
+       alert('Shutdown successfully!');
+     },
+     (error) => {
+       alert('An error occur while shutdown: ' + error);
+     }); 	 
+   });     
+    
+  </script>
+ </body>
+</html>

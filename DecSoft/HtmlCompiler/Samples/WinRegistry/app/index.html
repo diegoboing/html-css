@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>WinRegistry sample app</title>
+ </head>
+ <body>
+ 
+  <div> 
+   <button id="write-value">Write value</button>
+   <br /><br />
+   <button id="read-value">Read value</button>
+   <br /><br />
+   <button id="value-exist">Value exist?</button>
+   <br /><br />
+   <button id="delete-value">Delete value</button>
+   <br /><br />
+   <button id="key-exist">Key exist?</button>
+   <br /><br />
+   <button id="delete-key">Delete key</button>
+  </div>
+  
+  <hr />
+  
+  <div>
+   After testing this app, use the Delete key button, so you remove the changes on it.
+  </div>
+
+  <script>
+  
+    // Note how we use a double slash \\ to separate the registry keys parts.
+  
+    document.getElementById('write-value').addEventListener('click', function () {	
+      dhc.registry.writeValue({
+        key: 'Software\\My cute app\\Config',
+        name: 'ValueName',
+		value: 'Here is the value!'
+      }).then((result) => {
+	    if (result) {
+          alert('The value has been written!');
+		} else {
+		  alert('The value cannot be written!');
+		}
+      },
+      (error) => {
+        alert('An error occur: ' + error);
+      });	
+	});
+	
+    document.getElementById('read-value').addEventListener('click', function () {	
+      dhc.registry.readValue({
+        key: 'Software\\My cute app\\Config',
+        name: 'ValueName'
+      }).then((value) => {
+        alert(value);   
+      },
+      (error) => {
+        alert('An error occur: ' + error);
+      });	
+	});	
+	
+    document.getElementById('value-exist').addEventListener('click', function () {	
+      dhc.registry.valueExist({
+        key: 'Software\\My cute app\\Config',
+        name: 'ValueName'
+      }).then((result) => {
+        if (result) {
+		  alert('Yes, the value exist!');
+		} else {
+		  alert('Nope, the value DO NOT exist!');
+		}  
+      },
+      (error) => {
+        alert('An error occur: ' + error);
+      });	
+	});		
+	
+    document.getElementById('delete-value').addEventListener('click', function () {	
+      dhc.registry.deleteValue({
+        key: 'Software\\My cute app\\Config',
+        name: 'ValueName'
+      }).then((result) => {
+        if (result) {
+		  alert('The value has been deleted!');
+		} else {
+		  alert('The value has NOT been deleted! Maybe did not exist?');
+		}  
+      },
+      (error) => {
+        alert('An error occur: ' + error);
+      });	
+	});	
+	
+    document.getElementById('key-exist').addEventListener('click', function () {	
+      dhc.registry.keyExist({
+        key: 'Software\\My cute app\\Config'
+      }).then((result) => {
+        if (result) {
+		  alert('Yes, the key exist!');
+		} else {
+		  alert('Nope, the key DO NOT exist!');
+		}  
+      },
+      (error) => {
+        alert('An error occur: ' + error);
+      });	
+	});		
+	
+    document.getElementById('delete-key').addEventListener('click', function () {	
+      dhc.registry.deleteKey({
+        key: 'Software\\My cute app'
+      }).then((result) => {
+        if (result) {
+		  alert('The key has been deleted!');
+		} else {
+		  alert('The key cannot be deleted! Maybe do not exist?');
+		}  
+      },
+      (error) => {
+        alert('An error occur: ' + error);
+      });	
+	});			
+	
+  </script>
+ </body>
+</html>

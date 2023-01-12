@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Shell sample app</title>
+ </head>
+ <body>
+  <div>
+   <button id="shell-execute-button">Extract and execute /sample.txt</button>
+   <button id="shell-explore-button">Extract and explore /sample.txt</button>
+   <div id="designtime-text"></div>
+  </div> 
+  <script>
+  
+   dhc.isRuntime().then((isRuntime) => {
+     if (!isRuntime) {
+	   document.getElementById('shell-execute-button').setAttribute('disabled', true); 
+	   document.getElementById('shell-explore-button').setAttribute('disabled', true); 
+	   document.getElementById('designtime-text').innerHTML = 'Compile this app: we need to extract a file and this only work at runtime!';
+	 }
+   });  
+  
+   document.getElementById('shell-execute-button').addEventListener('click', function () {
+     dhc.dialogs.saveFile({
+       title: 'Save sample.txt',
+	   fileName: 'sample.txt',
+       fileTypes: 'Text files|*.txt',
+       overwritePrompt: true	  
+	 }).then((filePath) => {
+	   if (filePath !== '') {	
+         dhc.files.extractFile({
+		   sourceFile: '/sample.txt',
+           targetFile: filePath
+         }).then(() => {
+           dhc.shell.execute({
+             filePath: filePath
+           }).then(() => {
+             alert('The file has been executed!');
+           },
+           (error) => {
+             alert('An error occur while execute the file: ' + error);
+           });           
+         },
+         (error) => {
+           alert('An error occur white extract the file: ' + error);
+         });	
+	   }
+	 });	 
+   });
+   
+   document.getElementById('shell-explore-button').addEventListener('click', function () {
+     dhc.dialogs.saveFile({
+       title: 'Save sample.txt',
+	   fileName: 'sample.txt',
+       fileTypes: 'Text files|*.txt',
+       overwritePrompt: true	  
+	 }).then((filePath) => {
+	   if (filePath !== '') {	
+         dhc.files.extractFile({
+		   sourceFile: '/sample.txt',
+           targetFile: filePath
+         }).then(() => {
+           dhc.shell.explore({
+             filePath: filePath
+           }).then(() => {
+             alert('The file has been explored!');
+           },
+           (error) => {
+             alert('An error occur while explore the file: ' + error);
+           });           
+         },
+         (error) => {
+           alert('An error occur white extract the file: ' + error);
+         });	
+	   }
+	 });	 
+   });   
+   
+  </script>
+ </body>
+</html>

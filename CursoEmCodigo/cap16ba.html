@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas - Simplificação</title>
+    <style>
+        h1 { /*box level*/
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            
+            /*Simplificando o código do border com shorthand - Esse código está comentado, pois já está sendo utilizado na página cap16
+            border-width: 10px;
+            border-style: solid;
+            border-color: darksalmon;*/
+            border: 10px solid darksalmon
+
+            /*Padding tem 4 configurações, CIMA, DIRETA, BAIXO E ESQUERDA. Sentido do relógio. Padding, espaço entre a borda e o conteúdo.*/
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+
+
+            
+             /*Para centralizar a marge, margin:auto
+            margin: auto;*/
+
+            /*Outline, entre a borda e a margem - no código abaixo faz o pontilhado ao redor da margem.
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: black;*/
+            
+
+            outline: 5px dashed salmon;            
+        }
+        a {
+            border-width: 10px;
+            border-style: solid; /*Solid (linha completa), dashed (linha retangular espaçada), dotted (linha pontilhada), groove (margem estilo 3d) e Double (linha dupla)*/
+            border-color: red;
+
+            /*Inline-level
+            Padding no link - Simplificado com Shorthand
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            No caso abaixo, os valores são iguais, podendo colocar apenas o primeiro valor 10px.*/
+            padding: 10px;
+
+            /*Configuração da margem - Configuração no sentido do relógio.
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+            margin: 20px auto 40px auto;
+            
+            /*Se quiser centralizar só colocar auto*/
+            /*A margem é possível configurar visualizar no dev-tools (google-chrome)*/
+
+              /*Para centralizar a marge, margin:auto
+              margin: auto;*/
+            
+        }
+        div > p { /*div tem um filho que é um parágrafo. Irá esconder o parágrafo quem tem nas DIV.*/
+            display: none;
+        }
+
+        div:hover > p { /*Representação de filho. Mostra o texto oculto quando passa o mouse por cima do texto da div. Nesse exemplo seria o PASSE O MOUSE AQUI na div; */
+            display: block;
+            color: white;
+            background-color: rgba(36, 28, 28, 0.438);
+            width: 375px;
+        }
+
+        div:hover {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Simplificar o código com Shorthand</h2>
+    <p><strong>Border</strong>: <br>
+    border: 10px solid darksalmon</p>
+
+    <h2>Simplificar o código com Shorthand</h2>
+    <p><strong>Padding</strong>: <br>
+    padding: 10px 10px 10px 10px -- Quando os valores do padding são todos iguais, basta colocar apenas o primeiro valor. <br>Se quiser centralizar, coloca auto nas medidas, direita - esquerda. </p>
+
+    <h2>Outline</h2>
+    <p>outline: 5px dashed salmon;</p>
+
+    <hr>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="x">links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona.</p>
+    <p>SPAN é o mais usado, também o DIV.</p>
+    <h2>Margem</h2>
+    <p>Medida da borda pra fora.</p>
+    <p><strong>Para centralizar a margem, margin:auto </strong></p>
+    <hr>
+    
+    <h2>Outline</h2>
+    <p>Entre a borda e a margem. Mas fica na margem.</p>
+    <p>/*Outline, entre a borda e a margem - no código abaixo faz o pontilhado ao redor da margem.*/ <br>
+        outline-width: 5px; <br>
+        outline-style: dashed; <br>
+        outline-color: black;</p>
+    <h2>Padding</h2>
+    <p>Medida da borda para dentro.</p>
+    <p><strong>Código para padding, da borda para dentro: <br></strong>/
+        O código deve ser feito no sentido horário. Cima, direita, baixo e esquerda. <br>
+        *Padding no link*/ <br><strong>padding-top: 10px; <br>padding-right: 10px; <br> padding-bottom: 10px; <br>padding-left: 10px;</strong></p>
+<hr>
+
+<!--CRIADO UM EXEMPLO DE BORDER NA TAG H2-->
+<h2>Exmplo do BORDER no PADDING</h2>
+<div><strong>Padding - Passe o mouse aqui</strong>
+    <p>Medida da borda para dentro.</p>
+    <p><strong>Código para padding, da borda para dentro: <br></strong>/
+        O código deve ser feito no sentido horário. Cima, direita, baixo e esquerda. <br>
+        *Padding no link*/ <br>
+        padding-top: 10px; <br>
+        padding-right: 10px; <br>
+        padding-bottom: 10px; <br>
+        padding-left: 10px;</p></div>
+
+<hr>
+
+
+   
+<hr>
+    <h2>Utilizar o DEV-Tools do Goole-Chrome</h2>
+<p>Na página a ser analisada, clicar botão direito, inspecionar</p>
+
+<center><img src="imagens/dev-tools.png" width="400" alt="dev-tools"></center>
+
+
+
+
+    <center> <a href="index.html" target="_self" rel="prev">Página inicial</a></center>
+
+</body>
+</html>

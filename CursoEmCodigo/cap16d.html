@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    
+    <style>
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cyan;
+        margin: 0px;
+       }
+       header {
+        background-color: bisque;
+        padding: 10px;
+        margin: 10px;
+       }
+       h1 {
+        background-color: rgba(4, 49, 49, 0.267);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
+        padding: 3px;
+       }
+       nav {
+        background-color: blueviolet;
+        padding: 3px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356); /*Deslocamento horizontal, deslocamento vertical, espalhamento e sombra*/
+
+       }
+       nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin: 30px;
+       }
+       nav > a:hover {
+        text-decoration: underline;
+       }
+
+       main {
+        background-color: darkgrey;
+        padding: 10px;
+        margin: 10px;
+       }
+       article {
+        background-color: teal;
+        padding: 5px;
+
+       }
+       article > aside {
+        background-color: slategrey;
+       }
+       footer {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+       }
+       footer > p {
+        margin 0px;
+       }
+    </style>
+
+</head>
+<body>
+    <h1>HTML4 e HTML5</h1>
+    <p>As div no HTML4 era usada da seguinte forma: <br>div id=cabcecalho, div id=menu, div id=rodape e assim por diante. Mas com o HTML5 agora é usado pensando na semântica.</p>
+    <p>DIV Caixa do tipo BOX-Leve - SPAN Caixa do tipo inline-level.</p>
+    <p>HEADER - cabeçãlho</p>
+    <p>main - Conteúdo principal</p>
+    <p>footer - rodapé</p>
+   
+    <header> <!--Cabeçalho--> 
+        <h1>Meu site - Exemplo de sombras</h1>
+        <p>Para adicionar sombras: <br> box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356); /*Deslocamento horizontal, deslocamento vertical, espalhamento e sombra*/ </p>
+        <nav> <!--NAV para navegação, MENU.-->
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"> 
+            <p>Esportes Política Tecnologia</p>
+        </section> <!--Seções dentro do site-->
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic eum corrupti, debitis, laboriosam laudantium cumque tempore laborum officia accusamus perspiciatis illo consequatur pariatur id harum necessitatibus quibusdam! A, distinctio dolorem.</p>
+                <aside>
+                    <p>Artigo escrito por Diego</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>Desenvolvido por RDK Eletrônica.</p>
+    </footer>
+
+    <h1>código CSS</h1>
+    <pre class="lang:xhtml decode:true"> 
+        style>
+        body {
+         font-family: Arial, Helvetica, sans-serif; TIPO DE FONTE
+         background-color: cyan; FUNDO
+         margin: 0px; MARGEM DO TEXTO
+        }
+        header {
+         background-color: bisque;
+         padding: 10px; CAIXA HORIZONTAL
+         margin: 10px; MARGEM
+        }
+        h1 {
+         background-color: rgba(4, 49, 49, 0.267); SOMBRA
+         <strong>box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);</strong>
+         padding: 3px;
+        }
+        nav {
+         background-color: blueviolet;
+         padding: 3px;
+         <strong>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356); /*Deslocamento horizontal, deslocamento vertical, espalhamento e sombra*/</strong>
+ 
+        }
+        nav > a {
+         text-decoration: none; REMOVER LINHA ABAIXO DA PALAVRA
+         color: white;
+         font-weight: bold;
+         margin: 30px;
+        }
+        nav > a:hover {
+         text-decoration: underline;
+        }
+ 
+        main {
+         background-color: darkgrey;
+         padding: 10px;
+         margin: 10px;
+        }
+        article {
+         background-color: teal;
+         padding: 5px;
+ 
+        }
+        article > aside {
+         background-color: slategrey;
+        }
+        footer {
+         background-color: rgb(0, 0, 0);
+         color: white;
+         text-align: center;
+         padding: 0px;
+         margin: 0px;
+        }
+        footer > p {
+         margin 0px;
+        }
+     </style></pre>
+
+    <center> <a href="index.html" target="_self" rel="prev"><strong>Página inicial</strong></a></center></h1>
+    
+</body>
+</html>

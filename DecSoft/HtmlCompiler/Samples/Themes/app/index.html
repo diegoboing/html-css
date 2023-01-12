@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Themes sample app</title>
+ </head>
+ <body>
+  <div id="runtime-text">
+   You must compile this sample app in order to see it working, since it's not work as expected at designtime.
+  </div> 
+  <div id="themes-container" style="display: none;">
+   <h1>
+    Current theme: <span id="current-theme"></span>
+   </h1>
+   <form>
+    <label for="themes-list">Available themes</label>
+	<br />
+    <select size="15" id="themes-list" style="width: 300px;">
+	</select>
+	<div>
+	 * Select a theme from the list to set it
+	</div>
+   </form>
+  </div>
+  <script>
+
+   var
+     currentTheme = '';
+
+   dhc.isRuntime().then((isRuntime) => {
+   
+     if (isRuntime) {
+	 
+	   document.getElementById('runtime-text').style.display = 'none';
+	   document.getElementById('themes-container').style.display = 'block';
+	   
+	   // Check if we previously save the theme name in the app's local storage
+	   if (window.localStorage.getItem('theme') !== null) {
+	     // Set the theme previously saved in the app's local storage
+	     dhc.themes.setTheme({name: window.localStorage.getItem('theme')}).then((result) => {
+           if (!result) {
+		     alert('The specified theme cannot be established!');
+		   }  
+		 });		 
+	   }
+	   
+	   // Get the current theme
+       dhc.themes.getTheme().then((name) => {
+	     currentTheme = name;
+         document.getElementById('current-theme').innerHTML = name;  
+       });  	
+
+       // Get the available themes
+       dhc.themes.getThemes().then((themes) => {
+         for (var i = 0; i < themes.length; i++) {
+		   if (currentTheme === themes[i]) {
+		     document.getElementById('themes-list').innerHTML += '<option selected="true" value="'+themes[i]+'">'+themes[i]+'</option>';    		   
+		   } else {
+		     document.getElementById('themes-list').innerHTML += '<option value="'+themes[i]+'">'+themes[i]+'</option>';    		   
+		   }
+		 }
+       });  
+
+	   document.getElementById('themes-list').addEventListener('change', function (event) {
+	     // Establish a theme
+	     dhc.themes.setTheme({name: event.target.value}).then((result) => {
+           if (!result) {
+		     alert('The specified theme cannot be established!');
+			 window.localStorage.removeItem('theme');
+		   } 
+		 });
+		 window.localStorage.setItem('theme', event.target.value);
+	   });
+	 }	 
+   });
+
+  </script>
+ </body>
+</html>

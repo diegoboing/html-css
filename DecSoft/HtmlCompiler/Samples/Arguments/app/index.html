@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Arguments sample app</title>
+ </head>
+ <body>
+  <div id="arguments">
+   Compile this app in order to see it properly working. Execute the OpenExeWithArguments.bat file to run the app executable passing to it some arguments.
+  </div>
+  <script>  
+  
+    window.addEventListener('load', function () {
+	
+      dhc.isRuntime().then((isRuntime) => {
+        if (isRuntime) {
+	      var
+	       el = document.getElementById('arguments');
+	      el.innerHTML = '';
+	      dhc.app.getArgs().then(function (args){
+    	    for (var i = 0; i < args.length; i++) {
+    	      el.innerHTML += '<p style="margin-top: 20px;">Argument number ' + i + ': ' + args[i] + '</p>';  
+    	    }
+    	  }); 
+	    }
+      });
+	});
+  </script>
+ </body>
+</html>

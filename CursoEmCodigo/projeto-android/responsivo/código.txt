@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: rgba(128, 128, 128, 0.514);
+            
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+           min-width: 300px;
+           max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Teste de responsividade</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo officia ex tenetur exercitationem iste aliquid? Facere tempora quas nihil minus, praesentium iste assumenda itaque quos perspiciatis dolore commodi delectus provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perferendis doloribus excepturi magnam asperiores natus quidem consectetur unde, minima, porro ratione nostrum! Nemo pariatur adipisci, voluptatem dicta sapiente quod vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta neque facilis autem animi. Amet, neque! Dolor, illo. Sunt dolorem laudantium quas ut magni fuga quam, optio vel et dolores! </p>
+    <picture> <!--O Picture envelopado, edita mais fácil o tamanho da imagem. max-width de 800, quando diminui a página a imagem se adapta automaticamente. 
+    No SOURCE media utilizado a imagem pequena  e no img src a imagem grande-->
+        <source media="(max-width: 600px)" srcset="../imagens/irina-blok-pq.jpg">
+        <img src="../imagens/irina-blok.jpg" alt="Irina Blok"></picture>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo officia ex tenetur exercitationem iste aliquid? Facere tempora quas nihil minus, praesentium iste assumenda itaque quos perspiciatis dolore commodi delectus provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perferendis doloribus excepturi magnam asperiores natus quidem consectetur unde, minima, porro ratione nostrum! Nemo pariatur adipisci, voluptatem dicta sapiente quod vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta neque facilis autem animi. Amet, neque! Dolor, illo. Sunt dolorem laudantium quas ut magni fuga quam, optio vel et dolores! </p>
+    </main>
+</body>
+</html>

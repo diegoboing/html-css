@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>TrayIcon2 sample app</title>
+ </head>
+ <body>
+  <div id="runtime-text">
+   You must compile this sample app in order to see it working, since it's not work as expected at designtime.
+  </div> 
+  <div id="runtime-controls" style="display: none; margin-top: 20px;">
+   <button id="show-icon-button">Show the tray icon</button>
+   <button id="hide-icon-button">Hide the tray icon</button>
+  </div>
+  <script>
+  
+   // The tray icon works only once our app has been compiled, in other words, works at runtime
+   dhc.isRuntime().then((isRuntime) => {
+   
+     if (!isRuntime) {
+	   return false;
+     }
+
+     // Ok, we are at runtime, so hide the "runtime required" text
+	 document.getElementById('runtime-text').innerHTML = '';
+	 
+	 // And we can also show the runtime controls for this sample app
+	 document.getElementById('runtime-controls').style.display = 'block';
+	 
+     // Call to "dhc.trayMenu.showIcon"
+     dhc.trayMenu.showIcon()
+	  .then(() => {
+	    
+		// Minimize the app, and, since the tray icon is visible, hide the app also from the task bar.
+	    dhc.window.setState({state: 'minimized'});	 
+        		
+        // Notify the user that the app is running in the background.			
+        dhc.system.notification({
+	      name: "notification-1", 
+	      title: "App is running!", 
+	      body: "The app is running in the background, click in the tray icon to show / hide the app window!"
+	    });				
+		
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray icon has been successfully shown! Click on the tray icon to minimize this app to the system tray, and, click again to restore the app window to the normal state.';
+	  }); 	 
+   });
+
+   document.getElementById('show-icon-button').addEventListener('click', function () {
+     // Call to "dhc.trayMenu.showIcon"
+     dhc.trayMenu.showIcon()
+	  .then(() => {
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray icon has been successfully shown!';
+	  });       
+   }); 
+
+   document.getElementById('hide-icon-button').addEventListener('click', function () {
+     // Call to "dhc.trayMenu.hideIcon"
+     dhc.trayMenu.hideIcon()
+	  .then(() => {
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray icon has been successfully hidden!';
+	  });       
+   }); 
+
+   // The "dhc.events.onTrayIconClick" is called when the tray icon has been clicked
+   dhc.events.onTrayIconClick = function () {
+   
+     dhc.window.getState().then(state => {
+       if (state === 'minimized') {
+         dhc.window.setState({state: 'normal'});	   
+	   } else {
+         dhc.window.setState({state: 'minimized'});	   	   
+	   }
+     });
+   };
+  </script>
+ </body>
+</html>

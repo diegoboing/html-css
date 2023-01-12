@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importando Fontes de outros locais</title>
+
+    <style>
+        @font-face {
+            font-family: 'EasterFont St';
+            src: url('fonts/EasterFont\ St.ttf') format('opentype');  /*Caso queira colocar mais URLs, só colocar a vírgula e o restante dos comandos*/
+            /*Opções para o format
+            - Opentype (otf)
+            - Truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (aat - Apple Advanced Typography) 
+            - SVG*/    
+            font-weight: normal;   
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'use';
+            src: url('fonts/SILVERS\ PERSONAL\ USE.ttf') format('Truetype');
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+        h1 {
+            font-family: 'EasterFont St';
+            font-size: 3em;
+            font-weight: normal;
+            /*font-weight: normal - Tirar o negrito das letras ou colocar...*/
+        }
+        h2 {
+            font-family: 'use';
+            font-size: 2em;
+            font-weight: normal;
+            
+        }
+        </style>
+
+</head>
+    <body>
+        <h1>Importando Fontes de outros locais</h1>
+        <p>Acessar o site <a href="https://www.dafont.com/pt/theme.php?cat=802" target="_blank" rel="external" >DAFONT</a>, deve escolher a fonte, fazer o download e adicionar numa pasta junto ao código .HTML. <br>Depois, executar as linhas de comando acima para importação da fonte.</p>
+        <h1>Adicionando fontes de outra pasta</h1>
+        <p>Um exemplo do código que deve estar na cabeça: src: url('<strong>fonts/EasterFont St.ttf</strong>') format('opentype'); <br><strong>Fonts</strong> é o nome da pasta neste código.</p>
+        <h2>Adicionando mais de uma fonte no seletor</h2>
+        <p>Para adicionar mais de uma fonte, basta colocar mais seletores @font-face, adicionar o nome a o source...</p> 
+    
+    <h2>Exemplo dos códigos para utilizar</h2>
+        Seletor para configurar a fonte:
+        <pre class="lang:xhtml decode:true">@font-face {
+            font-family: 'EasterFont St';
+            src: url('fonts/EasterFont\ St.ttf') format('opentype');
+            
+            <strong>Para adicionar uma segunda fonte, necessário um novo seletor:</strong>
+            @font-face {
+                font-family: 'use';
+                src: url('fonts/SILVERS\ PERSONAL\ USE.ttf') format('Truetype');
+    <h2>Código para escolher a fonte no seletor:</h2>       
+                <pre class="lang:xhtml decode:true"> body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    color: black;
+                }
+                h1 {
+                    <strong>font-family: 'EasterFont St';</strong>
+                    font-size: 3em;
+                    font-weight: normal;
+                    /*font-weight: normal - Tirar o negrito das letras ou colocar...*/
+                }
+                h2 {
+                    <strong>font-family: 'use';</strong>
+                    font-size: 2em;
+                    font-weight: normal;
+                 }
+            
+
+            
+            
+    <center> <a href="index.html" target="_self" rel="prev">Página inicial</a></center></h1>
+</body>
+</html>

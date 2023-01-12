@@ -1,0 +1,50 @@
+<ol>
+    <h1>Vejamos abaixo o conteúdo em tópicos:</h1>
+    <h2>Cap 1 - Como a internet chega em minha casa?</h2>
+    <h3>1.1 - Como a internet chega em minha casa?</h3>
+    <h2>Cap 2 - Como a internet funciona?</h2>  
+    <h3>2.1 - Como a internet funciona?</h3>
+    <h3>2.2 - O que é domínio e hospedagem?</h3>
+    <h2>Cap 3 - A diferença entre HTML, CSS e JavaScript</h2>
+    <h3>3.1 - A diferença entre HTML, CSS e JavaScript</h3>
+    <h3>Front-end, Back-end e Full stack</h3>
+    <h2>Cap 4 - Instalando as ferramentas necessárias</h2>
+    <h3>Instalando todas as ferramentas</h3>
+    <h3>Configurações úteis para o VGS</h3>
+    <h2>Cap 5 - Parágrafos e Quebras</h2>
+    <h3>5.1 - Parágrafos e Quebras</h3>
+    <h3>5.2 - Símbolos e Emoji no seu site</h3>
+    <h2>Cap 6 - Você tem o direito de usar qualquer imagem no seu site?</h2>
+    <h3>6.1 - Você tem o direito de usar qualquer imagem no seu site?</h3>
+    <h3>6.2 - Quais são os formatos para imagens na Web?</h3>
+    <h3>6.3 - O tamanho das imagens importa para um site?</h3>
+    <h3>6.4 - A tag img em HTML5</h3>
+    <h3>6.5 - Como mudar o favicon de um site</h3>
+    <h2>Cap 7 - Hierarquia de Títulos</h2>
+    <h3>7.1 - Hierarquia de Títulos</h3>
+    <h2>Cap 8 - Semântica na HTML5 é importante</h2>
+    <h3>8.1 - Semântica na HTML5 é importante</h3>
+    <h3>8.2 - Negrito e Itálico do jeito certo</h3>
+    <h3>8.3 - Formatações adicionais em HTML</h3>
+    <h3>8.4 - Citações e Códigos</h3>
+    <h2>Cap 9 - Listas OL e UL</h2>
+    <h3>9.1 - Listas OL e UL</h3>
+    <h3>9.2 -  Listas mistas e de definição</h3>
+    <h2>Cap 10 - Links e Âncoras em HTML5</h2>
+    <h3>10.1 - Links e Âncoras em HTML5</h3>
+    <h3>10.2 -  Links Internos</h3>
+    <h3>10.3 - Links para download</h3>
+    <h3>10.4 - Desafios propostos</h3>
+    <h2>Cap 11 - Imagens Dinâmicas</h2>
+    <h3>11.1 - Imagens Dinâmicas</h3>
+    <h3>11.2 - Imagens que se adaptam sozinhas</h3>
+    <h3>11.3 - Colocando áudio no seu site</h3>
+    <h3>11.4 - Formatos de vídeo para seu site</h3>
+    <h3>11.5 -  Vídeos em hospedagem própria</h3>
+    <h3>11.6 -  Incorporação de vídeos externos</h3>
+    <h3>11.7 - Desafio: um site com vídeos</h3>
+    <h2>Cap 12 - Estilos CSS inline</h2>
+    <h3>12.1 - Estilos CSS inline</h3>
+    <h3>12.2 -  Estilos CSS internos</h3>
+    <h3>12.3 - Estilos CSS externos</h3>
+</ol>

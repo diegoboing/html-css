@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Close sample app</title>
+ </head>
+ <body>
+  <div id="runtime-text">
+   You must compile this sample app in order to see it working, since it's not work as expected at designtime.
+  </div> 
+  <script>
+
+   dhc.isRuntime().then((isRuntime) => {
+     if (isRuntime) {
+	   document.getElementById('runtime-text').innerHTML = 'Now yes! Try to close the app now...';
+	 }
+   });
+
+   dhc.events.onCloseQuery = function () {
+     if (confirm('You really want to close the app now?')) {
+	   dhc.app.close();
+	 }
+   };
+  </script>
+ </body>
+</html>

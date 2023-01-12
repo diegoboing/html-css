@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Command sample app</title>
+  <style>
+   textarea {
+     color: lime;
+     white-space: pre;	 
+     font-family: monospace;
+     background-color: black;
+   }
+  </style>
+ </head>
+ <body>
+  <div>
+   <textarea rows="20" cols="100" id="command-output" placeholder="You can see here the command output"></textarea>
+   <br />
+   <button id="shell-command-button">Execute the DIR command over the user desktop folder</button>
+  </div> 
+  <script>
+  
+   document.getElementById('shell-command-button').addEventListener('click', function () {
+   
+     dhc.folders.getUserDesktopDir().then((dirPath) => {
+       dhc.shell.command({
+         workingDir: '',
+	     showWindow: false,
+         command: 'DIR ' + dirPath + '*.*'
+	   }).then((output) => {
+         document.getElementById('command-output').value = output; 
+	   });	  
+     });
+   });
+   
+  </script>
+ </body>
+</html>

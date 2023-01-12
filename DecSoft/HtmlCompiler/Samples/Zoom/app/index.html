@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Zoom sample app</title>
+ </head>
+ <body>
+  <div>
+   <div id="current-zoom-factor">
+   </div>
+   <hr />
+   <div> 
+    Change the zoom factor:   
+    <input type="range" value="1" step="0.5" min="0.5" max="3" id="set-zoom-factor" />
+   </div>
+   <hr />
+   <div>
+    <button id="reset-zoom-factor">Reset zoom factor</button>
+   </div>
+  </div> 
+  <script>
+    dhc.window.getZoom().then(factor => {
+      document.getElementById('current-zoom-factor').innerHTML = 'The browser current zoom factor is: ' + factor;   
+    });        
+   
+    document.getElementById('set-zoom-factor').addEventListener('change', function () {
+      dhc.window.setZoom({factor: this.value}).then(() => {
+        dhc.window.getZoom().then(factor => {
+          document.getElementById('current-zoom-factor').innerHTML = 'The browser current zoom factor is: ' + factor;   
+        });   
+      }); 
+    });   
+	
+    document.getElementById('reset-zoom-factor').addEventListener('click', function () {
+      dhc.window.setZoom({factor: '1'}).then(() => {
+        dhc.window.getZoom().then(factor => {
+		  document.getElementById('set-zoom-factor').value = 1;
+          document.getElementById('current-zoom-factor').innerHTML = 'The browser current zoom factor is: ' + factor;   
+        });   
+      }); 
+    }); 	
+  </script>
+ </body>
+</html>

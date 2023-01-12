@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>NavBar sample app</title>
+ </head>
+ <body>
+  <div id="runtime-text">
+   You must compile this sample app in order to see it working, since it's not work as expected at designtime.
+  </div> 
+  <div style="margin-top: 20px;">
+   <a href="https://www.decsoftutils.com/" title="Press here to navigate to DecSoft Utils">Navigate to DecSoft Utils</a> so you can use the Back and Forward items from the main menu / navigation bar.
+  </div>
+  <script>
+
+   // The menu creation works only once our app has been compiled, in other words, works at runtime
+   dhc.isRuntime().then((isRuntime) => {
+     if (!isRuntime) {
+	   return false;
+     }	  
+
+     // Ok, we are at runtime, so hide the "runtime required" text
+	 document.getElementById('runtime-text').innerHTML = '';
+	 
+	 // Now prepare our main menu items map
+     var
+	   menuItems = JSON.stringify([
+	   {
+		 "id": 1,
+	     "caption": "Back",
+		 "image": "app/images/arrow_left.png"
+	   },
+	   {
+		 "id": 2,
+	     "caption": "Forward",
+		 "image": "app/images/arrow_right.png"
+	   }	   
+	 ]);
+   
+     // Call to "dhc.mainMenu.setItems" passing the menu items map that we created above
+     dhc.mainMenu.setItems({items: menuItems})
+	  .then(() => {
+	    // The main menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The main menu has been successfully set!';
+	  },
+      (error) => {
+	    // Ops! Some error occur while creating the main menu!
+        document.getElementById('runtime-text').innerHTML = 'An error occur while set the main menu: ' + error;
+      }); 
+   });
+
+  </script>
+ </body>
+</html>

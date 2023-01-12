@@ -1,0 +1,2234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<i18nCatalog Version="1.0" Locale="en-US">
+  <Domain Name="MainForm">
+    <Property ID=".Caption">
+      <Value>DecSoft App Builder</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[3].Items[0].Caption">
+      <Value>&amp;Run</Value>
+    </Property>
+    <Property ID="ProgramOptionsAction.Caption">
+      <Value>Program options</Value>
+    </Property>
+    <Property ID="ProgramOptionsDockPanel.Caption">
+      <Value>Program Options</Value>
+    </Property>
+    <Property ID="AppOpenDialog.FileNameLabel">
+      <Value>Open app</Value>
+    </Property>
+    <Property ID="AppOpenDialog.OkButtonLabel">
+      <Value>Open app</Value>
+    </Property>
+    <Property ID="AppOptionsDockViewAction.Caption">
+      <Value>App options</Value>
+    </Property>
+    <Property ID="AppOptionsDockViewAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="AppOptionsDockViewAction.Hint">
+      <Value>Show the app options</Value>
+    </Property>
+    <Property ID="CheckForUpdatesAction.Caption">
+      <Value>Check for updates</Value>
+    </Property>
+    <Property ID="CheckForUpdatesAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="CloseAction.Caption">
+      <Value>Close</Value>
+    </Property>
+    <Property ID="CloseAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="CloseAction.Hint">
+      <Value>Close the current app or file</Value>
+    </Property>
+    <Property ID="CloseAllAction.Caption">
+      <Value>Close all</Value>
+    </Property>
+    <Property ID="CloseAllAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="CloseAllAction.Hint">
+      <Value>Close all the opened apps and files</Value>
+    </Property>
+    <Property ID="CloseAllItem.Caption">
+      <Value>Close all</Value>
+    </Property>
+    <Property ID="CloseAllItem.Hint">
+      <Value>Close all the opened apps and files</Value>
+    </Property>
+    <Property ID="CloseItem.Caption">
+      <Value>Close</Value>
+    </Property>
+    <Property ID="CloseItem.Hint">
+      <Value>Close the current app or file</Value>
+    </Property>
+    <Property ID="CloseOthersAction.Caption">
+      <Value>Close others</Value>
+    </Property>
+    <Property ID="CloseOthersAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="CloseOthersAction.Hint">
+      <Value>Close all opened apps or files except the current one</Value>
+    </Property>
+    <Property ID="CloseOthersItem.Caption">
+      <Value>Close others</Value>
+    </Property>
+    <Property ID="CloseOthersItem.Hint">
+      <Value>Close all opened apps or files except the current one</Value>
+    </Property>
+    <Property ID="CompileAppAction.Caption">
+      <Value>Compile</Value>
+    </Property>
+    <Property ID="CompileAppAction.Category">
+      <Value>Run</Value>
+    </Property>
+    <Property ID="CompileAppAction.Hint">
+      <Value>Compile the current app</Value>
+    </Property>
+    <Property ID="CreateAppBatAction.Caption">
+      <Value>Create app BAT</Value>
+    </Property>
+    <Property ID="CreateAppBatAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="CreateAppBatAction.Hint">
+      <Value>Create a BAT file to compile the app using the command line compiler</Value>
+    </Property>
+    <Property ID="DebugAppAction.Caption">
+      <Value>Debug</Value>
+    </Property>
+    <Property ID="DebugAppAction.Category">
+      <Value>Run</Value>
+    </Property>
+    <Property ID="DebugAppAction.Hint">
+      <Value>Save the current app, compile and then run it</Value>
+    </Property>
+    <Property ID="DecSoftWebsiteAction.Caption">
+      <Value>DecSoft website</Value>
+    </Property>
+    <Property ID="DecSoftWebsiteAction.Category">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="DecSoftWebsiteAction.Hint">
+      <Value>Visit the DecSoft website</Value>
+    </Property>
+    <Property ID="ExitProgramAction.Caption">
+      <Value>Exit</Value>
+    </Property>
+    <Property ID="ExitProgramAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="ExitProgramAction.Hint">
+      <Value>Close DecSoft App Builder</Value>
+    </Property>
+    <Property ID="FileOpenDialog.DefaultExtension">
+      <Value>dab</Value>
+    </Property>
+    <Property ID="FileOpenDialog.FileNameLabel">
+      <Value>Open file</Value>
+    </Property>
+    <Property ID="FileOpenDialog.OkButtonLabel">
+      <Value>Open file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Caption">
+      <Value>&amp;File</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Caption">
+      <Value>&amp;New</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[0].Caption">
+      <Value>&amp;App</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[2].Caption">
+      <Value>&amp;JS file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[3].Caption">
+      <Value>&amp;CSS file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[4].Caption">
+      <Value>J&amp;SON file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[5].Caption">
+      <Value>&amp;HTML file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[6].Caption">
+      <Value>&amp;XML file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[7].Caption">
+      <Value>&amp;TXT file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[8].Caption">
+      <Value>&amp;Batch file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[0].Items[9].Caption">
+      <Value>Sh&amp;ell file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[10].Caption">
+      <Value>&amp;Close</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[11].Caption">
+      <Value>C&amp;lose others</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[12].Caption">
+      <Value>Clos&amp;e all</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[14].Caption">
+      <Value>E&amp;xit</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[1].Caption">
+      <Value>&amp;Recents</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[1].Items[0].Caption">
+      <Value>&amp;Dummy recent file item</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[3].Caption">
+      <Value>&amp;Open...</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[4].Caption">
+      <Value>Sa&amp;mples...</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[6].Caption">
+      <Value>&amp;Save</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[7].Caption">
+      <Value>Sa&amp;ve as...</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[0].Items[8].Caption">
+      <Value>S&amp;ave all</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[1].Caption">
+      <Value>&amp;View</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[1].Items[0].Caption">
+      <Value>&amp;Welcome page</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[1].Items[1].Caption">
+      <Value>P&amp;rogram messages</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Caption">
+      <Value>&amp;App</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[0].Caption">
+      <Value>&amp;New view</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[10].Caption">
+      <Value>Re&amp;move frame</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[12].Caption">
+      <Value>&amp;App options</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[13].Caption">
+      <Value>F&amp;iles manager</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[14].Caption">
+      <Value>F&amp;unctions manager</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[16].Caption">
+      <Value>O&amp;pen app.js</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[17].Caption">
+      <Value>Open app folder</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[19].Caption">
+      <Value>Open &amp;fixed.css</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[1].Caption">
+      <Value>&amp;Remove view</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[20].Caption">
+      <Value>Open sca&amp;led.css</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[21].Caption">
+      <Value>Open &amp;shared.css</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[3].Caption">
+      <Value>Mo&amp;ve view up</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[4].Caption">
+      <Value>Move view &amp;down</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[6].Caption">
+      <Value>Ne&amp;w dialog</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[7].Caption">
+      <Value>Rem&amp;ove dialog</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[2].Items[9].Caption">
+      <Value>N&amp;ew frame</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[3].Caption">
+      <Value>&amp;Run</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[3].Items[1].Caption">
+      <Value>&amp;Stop</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[3].Items[3].Caption">
+      <Value>&amp;Compile</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[3].Items[4].Caption">
+      <Value>&amp;Debug</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[4].Caption">
+      <Value>&amp;Tools</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[4].Items[0].Caption">
+      <Value>&amp;Create app BAT</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[4].Items[1].Caption">
+      <Value>&amp;Minimize app code</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[4].Items[3].Caption">
+      <Value>C&amp;heck for updates</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[4].Items[5].Caption">
+      <Value>&amp;Program options</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Caption">
+      <Value>&amp;Help</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Items[0].Caption">
+      <Value>&amp;Program help</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Items[1].Caption">
+      <Value>&amp;Support forum</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Items[3].Caption">
+      <Value>Pr&amp;ogram history</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Items[4].Caption">
+      <Value>P&amp;rogram license</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Items[5].Caption">
+      <Value>Pro&amp;gram register</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Items[7].Caption">
+      <Value>&amp;DecSoft website</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[0].Items[5].Items[9].Caption">
+      <Value>&amp;About this program</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Caption">
+      <Value>App</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[0].Caption">
+      <Value>&amp;App</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[2].Caption">
+      <Value>&amp;JS file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[3].Caption">
+      <Value>&amp;CSS file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[4].Caption">
+      <Value>J&amp;SON file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[5].Caption">
+      <Value>&amp;HTML file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[6].Caption">
+      <Value>&amp;XML file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[7].Caption">
+      <Value>&amp;TXT file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[8].Caption">
+      <Value>&amp;Batch file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[0].Items[9].Caption">
+      <Value>Sh&amp;ell file</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[10].Caption">
+      <Value>Ne&amp;w view</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[11].Caption">
+      <Value>New &amp;dialog</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[12].Caption">
+      <Value>New &amp;frame</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[14].Caption">
+      <Value>&amp;Remove view</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[15].Caption">
+      <Value>Remove d&amp;ialog</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[16].Caption">
+      <Value>R&amp;emove frame</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[18].Caption">
+      <Value>A&amp;pp options</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[19].Caption">
+      <Value>Fi&amp;les manager</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[1].Caption">
+      <Value>Recents</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[1].Items[0].Caption">
+      <Value>&amp;Dummy recent file item</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[20].Caption">
+      <Value>Fu&amp;nctions manager</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[22].Caption">
+      <Value>Progra&amp;m options</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[24].Caption">
+      <Value>R&amp;un</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[25].Caption">
+      <Value>S&amp;top</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[27].Caption">
+      <Value>&amp;Compile</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[28].Caption">
+      <Value>De&amp;bug</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[3].Caption">
+      <Value>&amp;Open...</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[4].Caption">
+      <Value>Samples...</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[6].Caption">
+      <Value>&amp;Save</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[7].Caption">
+      <Value>S&amp;ave as...</Value>
+    </Property>
+    <Property ID="MainActionsManager.ActionBars[1].Items[8].Caption">
+      <Value>Sa&amp;ve all</Value>
+    </Property>
+    <Property ID="MainActionsToolbar.Caption">
+      <Value>MainActionsToolbar</Value>
+    </Property>
+    <Property ID="MessagesDockViewAction.Caption">
+      <Value>Program messages</Value>
+    </Property>
+    <Property ID="MessagesDockViewAction.Category">
+      <Value>View</Value>
+    </Property>
+    <Property ID="MessagesDockViewAction.Hint">
+      <Value>Show the program messages panel</Value>
+    </Property>
+    <Property ID="MinimizeAppCodeAction.Caption">
+      <Value>Minimize app code</Value>
+    </Property>
+    <Property ID="MinimizeAppCodeAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="MinimizeAppCodeAction.Hint">
+      <Value>Minimize the app Javascript and CSS code</Value>
+    </Property>
+    <Property ID="MoveViewDownAction.Caption">
+      <Value>Move view down</Value>
+    </Property>
+    <Property ID="MoveViewDownAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="MoveViewDownAction.Hint">
+      <Value>Move down the selected app view</Value>
+    </Property>
+    <Property ID="MoveViewUpAction.Caption">
+      <Value>Move view up</Value>
+    </Property>
+    <Property ID="MoveViewUpAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="MoveViewUpAction.Hint">
+      <Value>Move up the selected app view</Value>
+    </Property>
+    <Property ID="NewAppAction.Caption">
+      <Value>App</Value>
+    </Property>
+    <Property ID="NewAppAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewAppAction.Hint">
+      <Value>Create a new app</Value>
+    </Property>
+    <Property ID="NewAppItem.Caption">
+      <Value>App</Value>
+    </Property>
+    <Property ID="NewAppItem.Hint">
+      <Value>Create a new app</Value>
+    </Property>
+    <Property ID="NewBatchFileAction.Caption">
+      <Value>Batch file</Value>
+    </Property>
+    <Property ID="NewBatchFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewCssFileAction.Caption">
+      <Value>CSS file</Value>
+    </Property>
+    <Property ID="NewCssFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewCssFileItem.Caption">
+      <Value>CSS file</Value>
+    </Property>
+    <Property ID="NewDialogAction.Caption">
+      <Value>New dialog</Value>
+    </Property>
+    <Property ID="NewDialogAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="NewDialogAction.Hint">
+      <Value>Create a new app dialog</Value>
+    </Property>
+    <Property ID="NewFrameAction.Caption">
+      <Value>New frame</Value>
+    </Property>
+    <Property ID="NewFrameAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="NewFrameAction.Hint">
+      <Value>Create a new app frame</Value>
+    </Property>
+    <Property ID="NewHtmlFileAction.Caption">
+      <Value>HTML file</Value>
+    </Property>
+    <Property ID="NewHtmlFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewHtmlFileItem.Caption">
+      <Value>HTML file</Value>
+    </Property>
+    <Property ID="NewItem.Caption">
+      <Value>New</Value>
+    </Property>
+    <Property ID="NewJsFileAction.Caption">
+      <Value>JS file</Value>
+    </Property>
+    <Property ID="NewJsFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewJsFileItem.Caption">
+      <Value>JS file</Value>
+    </Property>
+    <Property ID="NewJsonFileAction.Caption">
+      <Value>JSON file</Value>
+    </Property>
+    <Property ID="NewJsonFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewShellFileAction.Caption">
+      <Value>Shell file</Value>
+    </Property>
+    <Property ID="NewShellFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewTxtFileAction.Caption">
+      <Value>TXT file</Value>
+    </Property>
+    <Property ID="NewTxtFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="NewViewAction.Caption">
+      <Value>New view</Value>
+    </Property>
+    <Property ID="NewViewAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="NewViewAction.Hint">
+      <Value>Create a new app view</Value>
+    </Property>
+    <Property ID="NewXmlFileAction.Caption">
+      <Value>XML file</Value>
+    </Property>
+    <Property ID="NewXmlFileAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="OpenAction.Caption">
+      <Value>Open...</Value>
+    </Property>
+    <Property ID="OpenAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="OpenAction.Hint">
+      <Value>Open a previosly saved app or other supported file</Value>
+    </Property>
+    <Property ID="OpenAppFixedFCssFileAction.Caption">
+      <Value>Open fixed.css</Value>
+    </Property>
+    <Property ID="OpenAppFixedFCssFileAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="OpenAppFolderAction.Caption">
+      <Value>Open app folder</Value>
+    </Property>
+    <Property ID="OpenAppFolderAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="OpenAppFolderAction.Hint">
+      <Value>Open the app folder</Value>
+    </Property>
+    <Property ID="OpenAppJsFileAction.Caption">
+      <Value>Open app.js</Value>
+    </Property>
+    <Property ID="OpenAppJsFileAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="OpenAppJsFileAction.Hint">
+      <Value>Open the compiled app.js file</Value>
+    </Property>
+    <Property ID="OpenAppScaledFCssFileAction.Caption">
+      <Value>Open scaled.css</Value>
+    </Property>
+    <Property ID="OpenAppScaledFCssFileAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="OpenAppScaledFCssFileAction.Hint">
+      <Value>Open the compiled app scaled.css file</Value>
+    </Property>
+    <Property ID="OpenAppSharedCssStyleAction.Caption">
+      <Value>Open shared.css</Value>
+    </Property>
+    <Property ID="OpenAppSharedCssStyleAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="OpenItem.Caption">
+      <Value>Open...</Value>
+    </Property>
+    <Property ID="OpenItem.Hint">
+      <Value>Open a previosly saved app or other supported file</Value>
+    </Property>
+    <Property ID="OpenSampleAction.Caption">
+      <Value>Samples...</Value>
+    </Property>
+    <Property ID="OpenSampleAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="OpenSampleAction.Hint">
+      <Value>Explore the app samples folder</Value>
+    </Property>
+    <Property ID="ProgramAboutAction.Caption">
+      <Value>About this program</Value>
+    </Property>
+    <Property ID="ProgramAboutAction.Category">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="ProgramAboutAction.Hint">
+      <Value>Show information about DecSoft App Builder</Value>
+    </Property>
+    <Property ID="ProgramAboutDockPanel.Caption">
+      <Value>About DecSoft App Builder</Value>
+    </Property>
+    <Property ID="ProgramDebuggerDockPanel.Caption">
+      <Value>Debugger</Value>
+    </Property>
+    <Property ID="ProgramHelpAction.Caption">
+      <Value>Program help</Value>
+    </Property>
+    <Property ID="ProgramHelpAction.Category">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="ProgramHelpAction.Hint">
+      <Value>Show the program help</Value>
+    </Property>
+    <Property ID="ProgramHelpDockPanel.Caption">
+      <Value>Program Help</Value>
+    </Property>
+    <Property ID="ProgramHistoryAction.Caption">
+      <Value>Program history</Value>
+    </Property>
+    <Property ID="ProgramHistoryAction.Category">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="ProgramLicenseAction.Caption">
+      <Value>Program license</Value>
+    </Property>
+    <Property ID="ProgramLicenseAction.Category">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="ProgramLicenseAction.Hint">
+      <Value>Read the DecSoft App Builder user license</Value>
+    </Property>
+    <Property ID="ProgramMessagesDockPanel.Caption">
+      <Value>Messages</Value>
+    </Property>
+    <Property ID="ProgramOptionsAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="ProgramOptionsAction.Hint">
+      <Value>Show the program options</Value>
+    </Property>
+    <Property ID="ProgramWebBrowserDockPanel.Caption">
+      <Value>Web Browser</Value>
+    </Property>
+    <Property ID="ProgramWelcomeDockPanel.Caption">
+      <Value>Welcome Page</Value>
+    </Property>
+    <Property ID="RecentFilesAction.Caption">
+      <Value>Recents</Value>
+    </Property>
+    <Property ID="RecentFilesAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="RecentFilesAction.Hint">
+      <Value>Reopen recents and favorite apps and files</Value>
+    </Property>
+    <Property ID="RegisterAction.Caption">
+      <Value>Program register</Value>
+    </Property>
+    <Property ID="RegisterAction.Category">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="RegisterAction.Hint">
+      <Value>Register the program</Value>
+    </Property>
+    <Property ID="RemoveDialogAction.Caption">
+      <Value>Remove dialog</Value>
+    </Property>
+    <Property ID="RemoveDialogAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="RemoveDialogAction.Hint">
+      <Value>Remove the selected app dialog</Value>
+    </Property>
+    <Property ID="RemoveFrameAction.Caption">
+      <Value>Remove frame</Value>
+    </Property>
+    <Property ID="RemoveFrameAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="RemoveFrameAction.Hint">
+      <Value>Remove the selected app frame</Value>
+    </Property>
+    <Property ID="RemoveViewAction.Caption">
+      <Value>Remove view</Value>
+    </Property>
+    <Property ID="RemoveViewAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="RemoveViewAction.Hint">
+      <Value>Remove the selected app view</Value>
+    </Property>
+    <Property ID="RunAppAction.Caption">
+      <Value>Run</Value>
+    </Property>
+    <Property ID="RunAppAction.Category">
+      <Value>Run</Value>
+    </Property>
+    <Property ID="RunAppAction.Hint">
+      <Value>Run the existing app compilation</Value>
+    </Property>
+    <Property ID="SaveAction.Caption">
+      <Value>Save</Value>
+    </Property>
+    <Property ID="SaveAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="SaveAction.Hint">
+      <Value>Save the current app, file, app options or program options</Value>
+    </Property>
+    <Property ID="SaveAllAction.Caption">
+      <Value>Save all</Value>
+    </Property>
+    <Property ID="SaveAllAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="SaveAllAction.Hint">
+      <Value>Save all the opened apps and files</Value>
+    </Property>
+    <Property ID="SaveAllItem.Caption">
+      <Value>Save all</Value>
+    </Property>
+    <Property ID="SaveAllItem.Hint">
+      <Value>Save all the opened apps and files</Value>
+    </Property>
+    <Property ID="SaveAsAction.Caption">
+      <Value>Save as...</Value>
+    </Property>
+    <Property ID="SaveAsAction.Category">
+      <Value>File</Value>
+    </Property>
+    <Property ID="SaveAsAction.Hint">
+      <Value>Save the current app or file with other name and/or location</Value>
+    </Property>
+    <Property ID="SaveAsItem.Caption">
+      <Value>Save as...</Value>
+    </Property>
+    <Property ID="SaveAsItem.Hint">
+      <Value>Save the current app or file with other name and/or location</Value>
+    </Property>
+    <Property ID="SaveItem.Caption">
+      <Value>Save</Value>
+    </Property>
+    <Property ID="SaveItem.Hint">
+      <Value>Save the current app, file, app options or program options</Value>
+    </Property>
+    <Property ID="ShowAppFilesManagerAction.Caption">
+      <Value>Files manager</Value>
+    </Property>
+    <Property ID="ShowAppFilesManagerAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="ShowAppFilesManagerAction.Hint">
+      <Value>Show the app files manager</Value>
+    </Property>
+    <Property ID="ShowAppFunctionsManagerAction.Caption">
+      <Value>Functions manager</Value>
+    </Property>
+    <Property ID="ShowAppFunctionsManagerAction.Category">
+      <Value>App</Value>
+    </Property>
+    <Property ID="ShowAppFunctionsManagerAction.Hint">
+      <Value>Show the app functions manager</Value>
+    </Property>
+    <Property ID="StopRunAppAction.Caption">
+      <Value>Stop</Value>
+    </Property>
+    <Property ID="StopRunAppAction.Category">
+      <Value>Run</Value>
+    </Property>
+    <Property ID="StopRunAppAction.Hint">
+      <Value>Stop the current running app</Value>
+    </Property>
+    <Property ID="SupportForumAction.Caption">
+      <Value>Support forum</Value>
+    </Property>
+    <Property ID="SupportForumAction.Category">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="SupportForumAction.Hint">
+      <Value>Visit the DecSoft support forum</Value>
+    </Property>
+    <Property ID="WelcomeDockViewAction.Caption">
+      <Value>Welcome page</Value>
+    </Property>
+    <Property ID="WelcomeDockViewAction.Category">
+      <Value>View</Value>
+    </Property>
+    <Property ID="WelcomeDockViewAction.Hint">
+      <Value>Show the program welcome page</Value>
+    </Property>
+    <Literal ID="1FCA99DD434A59EFC5DECCD5D46806DB">
+      <Value>Program starts at %s</Value>
+    </Literal>
+    <Literal ID="37A00397CEF47EC6103A718A7DD14969">
+      <Value>Program started. Elapsed time: %s</Value>
+    </Literal>
+    <Literal ID="CCEC5693E703E8A1BFDC4F61601AF18D">
+      <Value>Buy a license now!</Value>
+    </Literal>
+    <Literal ID="32D78921266883C0A602889E324B4BC3">
+      <Value>%s is running. Confirm close the program?</Value>
+    </Literal>
+    <Literal ID="79B403A6A913C561A1CCD9A9B2765180">
+      <Value>Welcome to DecSoft App Builder!</Value>
+    </Literal>
+    <Literal ID="5E7F70DE9D45A574AFBA19944BDF3D72">
+      <Value>Thanks for your trust in DecSoft!</Value>
+    </Literal>
+    <Literal ID="F6BE428102DD6442CF0A0C9CA449EC2E">
+      <Value>Enjoy your development session!</Value>
+    </Literal>
+    <Literal ID="1012E173A47CBE57501E2A33C9CE4B58">
+      <Value>Thanks very much for your support!</Value>
+    </Literal>
+    <Literal ID="BDD340B2291B55DB692AA732E00189EB">
+      <Value>Thanks for creating with DecSoft!</Value>
+    </Literal>
+    <Literal ID="1303F1D88BA929C00A68A98354B26372">
+      <Value>DecSoft App Builder %s</Value>
+    </Literal>
+    <Literal ID="2DBEF86D6B73CC3F16B62001B422B34F">
+      <Value>DecSoft App Builder</Value>
+    </Literal>
+    <Literal ID="622E4F2C2BE4CA1B4E686DCD78CD94A7">
+      <Value>Unregistered DecSoft App Builder %s</Value>
+    </Literal>
+    <Literal ID="00D1D2A969F1939A2CF5AE09BA450477">
+      <Value>DecSoft App Builder (ALPHA RELEASE)</Value>
+    </Literal>
+    <Literal ID="22C3EBEF92886DA1E6422E84151310FC">
+      <Value>Searching for new releases...</Value>
+    </Literal>
+    <Literal ID="557648E48C0966C5A0307329A0F5B437">
+      <Value>A new product release has been found!</Value>
+    </Literal>
+    <Literal ID="5BCAA7A19C2ACA1969F2B41D00A0FF72">
+      <Value>Congratulations! You are using the latest product release.</Value>
+    </Literal>
+    <Literal ID="CE655BB40453E5123D747B4F4A4C2BF6">
+      <Value>Sorry, an error occurs and the program cannot search for new releases.\r\r</Value>
+    </Literal>
+    <Literal ID="D54EAE21B20E546776C35D5E06BD71F7">
+      <Value>Please, check if your computer is connected to Internet.\r\r</Value>
+    </Literal>
+    <Literal ID="5D3EEEC9CD17B4888B871EF37073FC0F">
+      <Value>Error message:\r\r</Value>
+    </Literal>
+    <Literal ID="74E1FB4C96B4321FAE9EDF44D073F282">
+      <Value>Congratulations! You are using the latest version of the product.</Value>
+    </Literal>
+    <Literal ID="FCB9EF9019DEAC5377532C3824C3061C">
+      <Value>Web Browser</Value>
+    </Literal>
+    <Literal ID="B75DDF89F34FE465ED88E4CB48D5C890">
+      <Value>App Builder detect a problem with the program requisites and cannot solve it. Please, reinstall App Builder. The program cannot continue and must be terminated now.</Value>
+    </Literal>
+    <Literal ID="6BD1880D5EB22162A4B90212C8E617DA">
+      <Value>%s browser</Value>
+    </Literal>
+    <Literal ID="CB5E223E6937434FA85AA05A9CC36319">
+      <Value>Debug the current app with the "%s"</Value>
+    </Literal>
+    <Literal ID="BD1780C9717502BE7310C73B85407E49">
+      <Value>You drop here unsupported files!</Value>
+    </Literal>
+    <Literal ID="87B618F29FC04FC78714BD8829050230">
+      <Value>We can handle: %s</Value>
+    </Literal>
+    <Literal ID="C36276E352B4477EB1AB4EBEE8ABAD7C">
+      <Value>Compile %s</Value>
+    </Literal>
+    <Literal ID="F1ADC42B46766280CF8CA12217B929AF">
+      <Value>Compile starts at %s</Value>
+    </Literal>
+    <Literal ID="EEFDFED89411BC6E6B0E5BA68758D5B2">
+      <Value>Success.</Value>
+    </Literal>
+    <Literal ID="346EE60A9293A4CF8B6F0148D92536F4">
+      <Value>Cancelled.</Value>
+    </Literal>
+    <Literal ID="B38C00A86D8DAD472836685D1F7DA81C">
+      <Value>Failed.</Value>
+    </Literal>
+    <Literal ID="7889BE66149F09E806DA3BB1B03524A5">
+      <Value>Elapsed time: %s</Value>
+    </Literal>
+    <Literal ID="10E10A814F3C1F9A5E847376C975EA3C">
+      <Value>Error: %s</Value>
+    </Literal>
+    <Literal ID="3EAFAD38AF8837EF8930A8B30A07F1FB">
+      <Value>The new release of DecSoft App Builder has been downloaded! Do you want to launch it right now?</Value>
+    </Literal>
+    <Literal ID="D8D2BD04367021340626CDEB66BEE588">
+      <Value>Ok! You can launch the downloaded release installer later!</Value>
+    </Literal>
+    <Literal ID="0E7D9F2EF6953CFC0E8E0750A21D183D">
+      <Value>%s Debug</Value>
+    </Literal>
+    <Literal ID="8035B396263C9B02C992E6EC50A26F1B">
+      <Value>Sorry, an error ocurr: "%s"</Value>
+    </Literal>
+    <Literal ID="2872F9D8063D6811970857B0868E8ED8">
+      <Value>Missing "%s"</Value>
+    </Literal>
+    <Literal ID="69E7C86F4F5D1CA9E712D70944501CD1">
+      <Value>Thanks very much for trust in DecSoft! Thanks very much for support our work! Enjoy DecSoft App Builder!</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="CompilerModule">
+    <Literal ID="7D82D32AD154B3B512CCC3A8285A00EB">
+      <Value>Prepare the app icon for HTML5</Value>
+    </Literal>
+    <Literal ID="F14250BF871533A45147CCE326CF92AB">
+      <Value>Non existing app icon. Use the default one.</Value>
+    </Literal>
+    <Literal ID="B05BE3C2DBFA916A82113EA894A26BC1">
+      <Value>Prepare the app icon for Phonegap</Value>
+    </Literal>
+    <Literal ID="E616B07C162CD0FBECFB9B89B2517813">
+      <Value>Compiling "%s" app</Value>
+    </Literal>
+    <Literal ID="1777D2D881C011518505FC0E87F75D5C">
+      <Value>Start to copy app fresh files</Value>
+    </Literal>
+    <Literal ID="0FF1D390EC6D392974B839CD974142AA">
+      <Value>Start to copy App Builder fresh files</Value>
+    </Literal>
+    <Literal ID="E1A9A46670632B57168391342FACFF78">
+      <Value>Error: can't create the output directory</Value>
+    </Literal>
+    <Literal ID="303F10C0B61FFDFA8F1459500A0D3DC5">
+      <Value>All required files has been copied</Value>
+    </Literal>
+    <Literal ID="A25C4AF875A302278809E7E17FCB0EBC">
+      <Value>Launching after build configured executable</Value>
+    </Literal>
+    <Literal ID="C05C8DE5C7134C2249A7CA34F17F1A8A">
+      <Value>Launching before build configured executable</Value>
+    </Literal>
+    <Literal ID="BDAA81CE7B82011B5A069E8DD5164CB5">
+      <Value>Preparing the app views</Value>
+    </Literal>
+    <Literal ID="4EADBA5F7ABAC7132DA207F784DFA6A9">
+      <Value>Preparing the app views routes</Value>
+    </Literal>
+    <Literal ID="9AC18A7E62DCF64DABAD9A95CC3AF2E0">
+      <Value>Preparing app index.html HTML viewport</Value>
+    </Literal>
+    <Literal ID="9CEE626C368D838CBC85A3845F705F9F">
+      <Value>Preparing the "%s" app icon.</Value>
+    </Literal>
+    <Literal ID="8B134A93AEA40B31739ED3EBB85003C9">
+      <Value>Preparing the "%s" app splash.</Value>
+    </Literal>
+    <Literal ID="9806105CF9360E1D3907A37621EE0932">
+      <Value>Invalid information for Apache Cordova config</Value>
+    </Literal>
+    <Literal ID="B6B82BC1B70551E848DC512DED78A061">
+      <Value>Preparing the Apache Cordova config</Value>
+    </Literal>
+    <Literal ID="A57A8F33B88BA86D15C7C98CA62D3D9E">
+      <Value>%s (Created with an unregistered version of DecSoft's App Builder)</Value>
+    </Literal>
+    <Literal ID="B87CC546D3B56FA525F1C49810E1D55D">
+      <Value>Preparing the app icon for different platforms.</Value>
+    </Literal>
+    <Literal ID="1019073307FE634E5E86B0537EAF6D93">
+      <Value>Skipping unmodified app icon to be processed.</Value>
+    </Literal>
+    <Literal ID="0A1D97805948095AF3B6D5DDD15FCF9E">
+      <Value>Writing the Cordova's signing JSON for Android</Value>
+    </Literal>
+    <Literal ID="EC9555B903C54B08F5A0049C6D3CCE3B">
+      <Value>Preparing the batch files for Cordova</Value>
+    </Literal>
+    <Literal ID="9C1D9D3D9BB5801213D37CB82BA296D1">
+      <Value>REM Add the custom "%s" plugin for our app</Value>
+    </Literal>
+    <Literal ID="D3BF07C01FC08BBA2B700FCF5ED1F92F">
+      <Value>REM Add the Whitelist plugin for our app</Value>
+    </Literal>
+    <Literal ID="2E2C6E91C5218F889A854B6CC72DB77F">
+      <Value>REM Add the Device plugin for our app</Value>
+    </Literal>
+    <Literal ID="789BF386B1B234082E61272355563AE4">
+      <Value>REM Add the Files plugin for our app</Value>
+    </Literal>
+    <Literal ID="69DDEEB3B189EECD0AF0BACF5CEE2E22">
+      <Value>REM Add the Network plugin for our app</Value>
+    </Literal>
+    <Literal ID="8B5223717AD1827C18A20B233BBB6E9F">
+      <Value>REM Add the Motion plugin for our app</Value>
+    </Literal>
+    <Literal ID="8D98A3683FD43298CCE91E8F5EE880C6">
+      <Value>REM Add the Barcode plugin for our app</Value>
+    </Literal>
+    <Literal ID="649F915B1396DD45E4B2CCE963F73EBE">
+      <Value>REM Add the Location plugin for our app</Value>
+    </Literal>
+    <Literal ID="C19BFC5604F13C8AB6E6EBE0239B845A">
+      <Value>REM Add the Battery plugin for our app</Value>
+    </Literal>
+    <Literal ID="94176D3837FCA95FA6155EE3430D9E31">
+      <Value>REM Add the Dialogs plugin for our app</Value>
+    </Literal>
+    <Literal ID="22789497F60EE0821120469DC9477815">
+      <Value>REM Add the Vibration plugin for our app</Value>
+    </Literal>
+    <Literal ID="27E9959A0A71454BA64FF2722145FDFD">
+      <Value>REM Add the Camera plugin for our app</Value>
+    </Literal>
+    <Literal ID="1A8FA6EFEC76FF4AF22DB270E830548F">
+      <Value>REM Add the In App Browser plugin for our app</Value>
+    </Literal>
+    <Literal ID="FD164E1D128DA59C93E39C11AA2CEF2B">
+      <Value>REM Add the Compass plugin for our app</Value>
+    </Literal>
+    <Literal ID="A1AB73CAB7829AEDC231E74567D06C51">
+      <Value>REM Add the StatusBar plugin for our app</Value>
+    </Literal>
+    <Literal ID="718AAA575E06DF6B7618CDBCFFD4FD72">
+      <Value>REM Created by DecSoft's App Builder v%s</Value>
+    </Literal>
+    <Literal ID="18991A4B152586A254C8C7B81B687C6B">
+      <Value>REM More information at %s</Value>
+    </Literal>
+    <Literal ID="492354F12C3E82950D0634430DEA15C0">
+      <Value>ECHO Created by DecSoft's App Builder v%s</Value>
+    </Literal>
+    <Literal ID="7DD4484B803C73512BB15DEC66383747">
+      <Value>ECHO More information at %s</Value>
+    </Literal>
+    <Literal ID="AA44EBAFAFBB3C15FA77763076E9E56F">
+      <Value>REM Set your provided Ant home path variable</Value>
+    </Literal>
+    <Literal ID="BEE48ACE23F19A9A88C4B3FD91AD2793">
+      <Value>REM Set your provided Java home path variable</Value>
+    </Literal>
+    <Literal ID="09DAA289BD8E1E2F3BE56E73071E3622">
+      <Value>REM Set your provided Android home path variable</Value>
+    </Literal>
+    <Literal ID="0B448008660E021000E1AF3281FCC4AA">
+      <Value>REM Pause the script execution, so we can view the script results</Value>
+    </Literal>
+    <Literal ID="20BE276F027373781200771FDC5637A3">
+      <Value>REM Adding your Batch start commands to be executed</Value>
+    </Literal>
+    <Literal ID="90E296258FB84D35CE3244E1E9E65438">
+      <Value>REM Adding your Batch after commands to be executed</Value>
+    </Literal>
+    <Literal ID="2A3367B21E3F925A7F946C8B97F0A4A0">
+      <Value>REM Adding your Batch end commands to be executed</Value>
+    </Literal>
+    <Literal ID="F8DD6C92B29E404CB4BD3ED59826B602">
+      <Value>Prepare batch file (run) for %s</Value>
+    </Literal>
+    <Literal ID="1FC063ABD5BC429C42740BEF955DCD04">
+      <Value>Prepare batch file (debug) for %s</Value>
+    </Literal>
+    <Literal ID="06391F610FB20F7A0CC678B682E5A86B">
+      <Value>Prepare batch file (release) for %s</Value>
+    </Literal>
+    <Literal ID="26FADB14735F67451961C93E1D5C457D">
+      <Value>REM Add the %s platform for our app</Value>
+    </Literal>
+    <Literal ID="69096DCCE8520FDED6A31BB4141DBA52">
+      <Value>REM Add the Splashscreen plugin for our app</Value>
+    </Literal>
+    <Literal ID="6F997001771C22A362A5B39641F350BF">
+      <Value>REM Build our app for the %s platform</Value>
+    </Literal>
+    <Literal ID="70FF3876D44EDAD01B7B4894DDDEDF26">
+      <Value>Writing the Cordova's signing JSON for iOS</Value>
+    </Literal>
+    <Literal ID="04717AA5D1FB1C2B64F2585869D6EE01">
+      <Value># Add the Device plugin for our app</Value>
+    </Literal>
+    <Literal ID="05A84E1542F836DE4747116E34D2EE16">
+      <Value># Add the Files plugin for our app</Value>
+    </Literal>
+    <Literal ID="4770112BB04FEB040B7BB3F13C6A0978">
+      <Value># Add the Network plugin for our app</Value>
+    </Literal>
+    <Literal ID="2B26C23B684DD23D09EDA31F17A35460">
+      <Value># Add the Motion plugin for our app</Value>
+    </Literal>
+    <Literal ID="4ED19BC6CA0834ADF13A98C2AC90D913">
+      <Value># Add the Barcode plugin for our app</Value>
+    </Literal>
+    <Literal ID="913A87D8256ED2EBBB2CB63C2A8C5A51">
+      <Value># Add the Location plugin for our app</Value>
+    </Literal>
+    <Literal ID="EE9C6199740BD6D23E2B55A164EB778B">
+      <Value># Add the Battery plugin for our app</Value>
+    </Literal>
+    <Literal ID="8404468490E66D97E9A0D8659D3281AD">
+      <Value># Add the Dialogs plugin for our app</Value>
+    </Literal>
+    <Literal ID="18297A32805B177A0A181D563749F425">
+      <Value># Add the Vibration plugin for our app</Value>
+    </Literal>
+    <Literal ID="27F01BAAAE9C5D482ACCF67EA059E7F4">
+      <Value># Add the Camera plugin for our app</Value>
+    </Literal>
+    <Literal ID="89BB539147C2A8100216DB70FB91EFF6">
+      <Value># Add the In App Browser plugin for our app</Value>
+    </Literal>
+    <Literal ID="6E45DEF8FBF30E6E0AA566DAE1AFF205">
+      <Value># Add the Compass plugin for our app</Value>
+    </Literal>
+    <Literal ID="A0BBAC278513BB142AF194149222529E">
+      <Value># Add the StatusBar plugin for our app</Value>
+    </Literal>
+    <Literal ID="5A6859EAE3197F12365C111407C63F8A">
+      <Value># More information at %s</Value>
+    </Literal>
+    <Literal ID="8F6D1B74729EF6AF66EB7980C301FE58">
+      <Value>echo "More information at %s"</Value>
+    </Literal>
+    <Literal ID="D6C0933FCA571EAB3AD78AAA68EAD23E">
+      <Value># Pause the script execution, so we can view the script results</Value>
+    </Literal>
+    <Literal ID="27977813BBF78861B62D6C696618C7AF">
+      <Value>READ -p "Paused..."</Value>
+    </Literal>
+    <Literal ID="0990784A9AE76D78365C3FE46B3F530E">
+      <Value># Add the iOS platform for our app</Value>
+    </Literal>
+    <Literal ID="2627702B559E753C12B06EB288F4ED87">
+      <Value># Add the Splashscreen plugin for our app</Value>
+    </Literal>
+    <Literal ID="474BF30A8C3ABF1308EB2772A92AF85C">
+      <Value>Invalid information for WebApp config</Value>
+    </Literal>
+    <Literal ID="9036E9C6BBDCA814AE619DDBA5620679">
+      <Value>Preparing the app icon for webapps.</Value>
+    </Literal>
+    <Literal ID="36708AAA224D69531D8C7D009DE1856D">
+      <Value>Preparing the WebApp manifest</Value>
+    </Literal>
+    <Literal ID="467FF13A39217FB95E3DC1B92F7871A5">
+      <Value>Invalid information for Progressive WebApp config</Value>
+    </Literal>
+    <Literal ID="3304A461A7BDE17F4CB8ABC742A1B31B">
+      <Value>Preparing the Progressive WebApp manifest</Value>
+    </Literal>
+    <Literal ID="DF21FD3DBD911975882EA2BAEEBAA543">
+      <Value>Preparing app index.html HTML metatags</Value>
+    </Literal>
+    <Literal ID="9F3F255032A5863151B8B16EBAB3B74B">
+      <Value>Fatal error. Missing app file: %s</Value>
+    </Literal>
+    <Literal ID="C8769C6D74432DB9C67C2341677F1AEA">
+      <Value>Copying and linking "%s" CSS file</Value>
+    </Literal>
+    <Literal ID="04BF15F536FEA45B21822DEF1D24AD4B">
+      <Value>Skipping the unmodified "%s" CSS file</Value>
+    </Literal>
+    <Literal ID="1A98DAECFB5880D952B66BCFBB24D19F">
+      <Value>Error copying and linking "%s" CSS file</Value>
+    </Literal>
+    <Literal ID="B6899143C3A46084CDB61E06D90910FC">
+      <Value>Preparing the default and included app themes</Value>
+    </Literal>
+    <Literal ID="95521F62A1231AE16A439B57A6E3B2F5">
+      <Value>Copying and linking "%s" JS file</Value>
+    </Literal>
+    <Literal ID="A56FD882BB7489DC8C15269054005CE4">
+      <Value>Skipping the unmodified "%s" JS file</Value>
+    </Literal>
+    <Literal ID="3BCC1E629A10FB5CE8495E3A9B413000">
+      <Value>Error copying and linking "%s" JS file</Value>
+    </Literal>
+    <Literal ID="EB2A7A1BA0EA8DE4E4C43C0B0861D370">
+      <Value>Invalid information for WebExtension config</Value>
+    </Literal>
+    <Literal ID="26EDD89C3B37FF6071D47BA1D08AE9C8">
+      <Value>Preparing the WebExtension manifest</Value>
+    </Literal>
+    <Literal ID="B47F29A4D8FDCC65A3AB2A04747A3B3D">
+      <Value>Copying "%s" image file</Value>
+    </Literal>
+    <Literal ID="CE7E4F98EB8CBA8AA764E955CD16D639">
+      <Value>Skipping the unmodified "%s" image file</Value>
+    </Literal>
+    <Literal ID="747240C15B09915F68186E02CDB8B53F">
+      <Value>Error copying "%s" image file</Value>
+    </Literal>
+    <Literal ID="B517D62045285819BDCBC6FAA5F66DE0">
+      <Value>Copying "%s" file</Value>
+    </Literal>
+    <Literal ID="BC97169FC7C9FB52983E6100CB5986DE">
+      <Value>Skipping the unmodified "%s" file</Value>
+    </Literal>
+    <Literal ID="00F97FB3EE1CE63B7020B6F24E7EBA69">
+      <Value>Error copying "%s" file</Value>
+    </Literal>
+    <Literal ID="47E8FBD9A07EF9FC40CEE91D7D5AE004">
+      <Value>Copying "%s" directory</Value>
+    </Literal>
+    <Literal ID="447E798B16428AB51143A8ECED931B9B">
+      <Value>Skipping unmodified "%s" directory</Value>
+    </Literal>
+    <Literal ID="BFC1160FBBBF32894B8C3B16271B12AF">
+      <Value>Error copying "%s" directory</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="IconResizerModule">
+    <Literal ID="8C02E9564AEFFECF23EB497C5AB4CCA3">
+      <Value>Error when creating the "%s" icon directory.</Value>
+    </Literal>
+    <Literal ID="247753DEE121F7E0FBC5CBD9F82AF74A">
+      <Value>Error when saving the "%s" icon.</Value>
+    </Literal>
+    <Literal ID="E99983BBB414F952D04D90A2F9FA12BA">
+      <Value>Cannot create the icons output directory.</Value>
+    </Literal>
+    <Literal ID="86168A7EDD48B9BC3303B23F5AF93410">
+      <Value>The original icon path do not exists.</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="I18nModule">
+    <Property ID="InputDialog.ButtonCaptions.Cancel">
+      <Value>Cancel</Value>
+    </Property>
+    <Property ID="InputDialog.ButtonCaptions.Help">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="InputDialog.ButtonCaptions.OK">
+      <Value>OK</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.Abort">
+      <Value>Abort</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.All">
+      <Value>All</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.Cancel">
+      <Value>Cancel</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.Close">
+      <Value>Close</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.Help">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.Ignore">
+      <Value>Ignore</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.No">
+      <Value>No</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.NoToAll">
+      <Value>No to All</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.OK">
+      <Value>OK</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.Retry">
+      <Value>Retry</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.Yes">
+      <Value>Yes</Value>
+    </Property>
+    <Property ID="MessageDlg.ButtonCaptions.YesToAll">
+      <Value>Yes to All</Value>
+    </Property>
+    <Property ID="MessageDlg.Captions.Confirmation">
+      <Value>Confirm</Value>
+    </Property>
+    <Property ID="MessageDlg.Captions.Error">
+      <Value>Error</Value>
+    </Property>
+    <Property ID="MessageDlg.Captions.Information">
+      <Value>Information</Value>
+    </Property>
+    <Property ID="MessageDlg.Captions.Warning">
+      <Value>Warning</Value>
+    </Property>
+    <Literal ID="1A17D5158C023B4AFC905868165C6C23">
+      <Value>There is no frames in this app. You can create one from the Menu -&gt; App -&gt; New frame</Value>
+    </Literal>
+    <Literal ID="75A875D1525671BE4E46FEA704992DE1">
+      <Value>Unknow auxiliar I18n string ID</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="SplashResizerModule">
+    <Literal ID="A83178D6F4A60F9C41421D1A0EBB6B8E">
+      <Value>Error when creating the "%s" splash directory.</Value>
+    </Literal>
+    <Literal ID="059674B48F1971E5F867AEF807082E29">
+      <Value>Cannot create the splash output directory.</Value>
+    </Literal>
+    <Literal ID="ABD20D1C6F48A29CCAF87F5B481F9E18">
+      <Value>The original splash path do not exists.</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="ViewDesignerForm">
+    <Property ID="ActionManager.ActionBars[0].Items[0].Caption">
+      <Value>&amp;Remove</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[1].Items[0].Caption">
+      <Value>&amp;Remove</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[0].Caption">
+      <Value>&amp;Remove insert</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[11].Caption">
+      <Value>&amp;Align to grid</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[12].Caption">
+      <Value>A&amp;lign left</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[13].Caption">
+      <Value>Al&amp;ign right</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[14].Caption">
+      <Value>Ali&amp;gn vertical</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[15].Caption">
+      <Value>Alig&amp;n top</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[16].Caption">
+      <Value>Align b&amp;ottom</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[17].Caption">
+      <Value>Align &amp;horizontal</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[18].Caption">
+      <Value>&amp;Make same width</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[19].Caption">
+      <Value>Ma&amp;ke same height</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[20].Caption">
+      <Value>Make same si&amp;ze</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[2].Caption">
+      <Value>R&amp;emove</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[4].Caption">
+      <Value>&amp;Copy</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[5].Caption">
+      <Value>&amp;Paste</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[6].Caption">
+      <Value>C&amp;ut</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[8].Caption">
+      <Value>&amp;Bring to front</Value>
+    </Property>
+    <Property ID="ActionManager.ActionBars[2].Items[9].Caption">
+      <Value>&amp;Send to back</Value>
+    </Property>
+    <Property ID="AlignLeftAction.Caption">
+      <Value>Align left</Value>
+    </Property>
+    <Property ID="AlignLeftAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="AlignLeftAction.Hint">
+      <Value>Align left edges</Value>
+    </Property>
+    <Property ID="AlignRightAction.Caption">
+      <Value>Align right</Value>
+    </Property>
+    <Property ID="AlignRightAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="AlignRightAction.Hint">
+      <Value>Align right edges</Value>
+    </Property>
+    <Property ID="AlignToGridAction.Caption">
+      <Value>Align to grid</Value>
+    </Property>
+    <Property ID="AlignToGridAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="AlignToGridAction.Hint">
+      <Value>Align to grid</Value>
+    </Property>
+    <Property ID="BottomEdgesAction.Caption">
+      <Value>Align bottom</Value>
+    </Property>
+    <Property ID="BottomEdgesAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="BottomEdgesAction.Hint">
+      <Value>Align bottom edges</Value>
+    </Property>
+    <Property ID="BringToFrontAction.Caption">
+      <Value>Bring to front</Value>
+    </Property>
+    <Property ID="BringToFrontAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="BringToFrontAction.Hint">
+      <Value>Bring to front</Value>
+    </Property>
+    <Property ID="CopyToClipboardAction.Caption">
+      <Value>Copy</Value>
+    </Property>
+    <Property ID="CopyToClipboardAction.Category">
+      <Value>Edit</Value>
+    </Property>
+    <Property ID="CopyToClipboardAction.Hint">
+      <Value>Copy to clipboard</Value>
+    </Property>
+    <Property ID="CutToClipboardAction.Caption">
+      <Value>Cut</Value>
+    </Property>
+    <Property ID="CutToClipboardAction.Category">
+      <Value>Edit</Value>
+    </Property>
+    <Property ID="CutToClipboardAction.Hint">
+      <Value>Cut to clipboard</Value>
+    </Property>
+    <Property ID="HorizontalCentersAction.Caption">
+      <Value>Align horizontal</Value>
+    </Property>
+    <Property ID="HorizontalCentersAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="HorizontalCentersAction.Hint">
+      <Value>Align horizontal centers</Value>
+    </Property>
+    <Property ID="LockSelectedAction.Caption">
+      <Value>Lock selected</Value>
+    </Property>
+    <Property ID="LockSelectedAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="LockSelectedAction.Hint">
+      <Value>Lock the selected controls</Value>
+    </Property>
+    <Property ID="PasteFromClipboardAction.Caption">
+      <Value>Paste</Value>
+    </Property>
+    <Property ID="PasteFromClipboardAction.Category">
+      <Value>Edit</Value>
+    </Property>
+    <Property ID="PasteFromClipboardAction.Hint">
+      <Value>Paste from clipboard</Value>
+    </Property>
+    <Property ID="RemoveInsertAction.Caption">
+      <Value>Remove insert</Value>
+    </Property>
+    <Property ID="RemoveInsertAction.Category">
+      <Value>Edit</Value>
+    </Property>
+    <Property ID="RemoveInsertAction.Hint">
+      <Value>Remove insert selection</Value>
+    </Property>
+    <Property ID="RemoveSelectedAction.Caption">
+      <Value>Remove</Value>
+    </Property>
+    <Property ID="RemoveSelectedAction.Category">
+      <Value>Edit</Value>
+    </Property>
+    <Property ID="RemoveSelectedAction.Hint">
+      <Value>Remove selection</Value>
+    </Property>
+    <Property ID="SameHeightAction.Caption">
+      <Value>Make same height</Value>
+    </Property>
+    <Property ID="SameHeightAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="SameHeightAction.Hint">
+      <Value>Make same height</Value>
+    </Property>
+    <Property ID="SameSizeAction.Caption">
+      <Value>Make same size</Value>
+    </Property>
+    <Property ID="SameSizeAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="SameSizeAction.Hint">
+      <Value>Make same size</Value>
+    </Property>
+    <Property ID="SameWidthAction.Caption">
+      <Value>Make same width</Value>
+    </Property>
+    <Property ID="SameWidthAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="SameWidthAction.Hint">
+      <Value>Make same width</Value>
+    </Property>
+    <Property ID="SaveDialog.OkButtonLabel">
+      <Value>Save bitmap</Value>
+    </Property>
+    <Property ID="SaveDialog.Title">
+      <Value>Save view capture</Value>
+    </Property>
+    <Property ID="SelectAllAction.Caption">
+      <Value>Select all</Value>
+    </Property>
+    <Property ID="SelectAllAction.Category">
+      <Value>Edit</Value>
+    </Property>
+    <Property ID="SelectAllAction.Hint">
+      <Value>Select all view controls or container childs</Value>
+    </Property>
+    <Property ID="SendToBackAction.Caption">
+      <Value>Send to back</Value>
+    </Property>
+    <Property ID="SendToBackAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="SendToBackAction.Hint">
+      <Value>Send to back</Value>
+    </Property>
+    <Property ID="TabIndexOrderAction.Caption">
+      <Value>Tab index order</Value>
+    </Property>
+    <Property ID="TabIndexOrderAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="TabIndexOrderAction.Hint">
+      <Value>View and edit the control's tab index order</Value>
+    </Property>
+    <Property ID="TopEdgesAction.Caption">
+      <Value>Align top</Value>
+    </Property>
+    <Property ID="TopEdgesAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="TopEdgesAction.Hint">
+      <Value>Align top edges</Value>
+    </Property>
+    <Property ID="UndoAction.Caption">
+      <Value>Undo</Value>
+    </Property>
+    <Property ID="UndoAction.Category">
+      <Value>Edit</Value>
+    </Property>
+    <Property ID="UndoAction.Hint">
+      <Value>Undo the last deletion</Value>
+    </Property>
+    <Property ID="UnlockSelectedAction.Caption">
+      <Value>Unlock selected</Value>
+    </Property>
+    <Property ID="UnlockSelectedAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="UnlockSelectedAction.Hint">
+      <Value>Unlock the selected controls</Value>
+    </Property>
+    <Property ID="VerticalCentersAction.Caption">
+      <Value>Align vertical</Value>
+    </Property>
+    <Property ID="VerticalCentersAction.Category">
+      <Value>Designer</Value>
+    </Property>
+    <Property ID="VerticalCentersAction.Hint">
+      <Value>Align vertical centers</Value>
+    </Property>
+  </Domain>
+  <Domain Name="ConfirmReplaceForm">
+    <Property ID=".Caption">
+      <Value>Confirm replace</Value>
+    </Property>
+    <Property ID="CancelButton.Caption">
+      <Value>Cancel</Value>
+    </Property>
+    <Property ID="NoButton.Caption">
+      <Value>&amp;No</Value>
+    </Property>
+    <Property ID="YesAllButton.Caption">
+      <Value>Yes to &amp;all</Value>
+    </Property>
+    <Property ID="YesButton.Caption">
+      <Value>Yes</Value>
+    </Property>
+    <Literal ID="345AE310544771E701C3820D58330687">
+      <Value>Replace this occurrence of "%s"?</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="AppControlPropsDockForm">
+    <Literal ID="9FC2D28C05ED9EB1D75BA4465ABF15A9">
+      <Value>Properties</Value>
+    </Literal>
+    <Literal ID="D04D963607A8456A47D1AF38D1F4C061">
+      <Value>"%s" is not a valid identifier.</Value>
+    </Literal>
+    <Literal ID="C8C206DFE3AA38B884EB28621FA098CA">
+      <Value>A view with the name "%s" already exists in the application.</Value>
+    </Literal>
+    <Literal ID="C4D0676E5B756BDB58FEDE316D86B102">
+      <Value>%s Properties</Value>
+    </Literal>
+    <Literal ID="BFD0638BC082082DAA91A257B5B95E41">
+      <Value>%s %s %s Property</Value>
+    </Literal>
+    <Literal ID="3E378D6CB0F0A2D76C82044A3ECE4AB4">
+      <Value>%s %s Designer</Value>
+    </Literal>
+    <Literal ID="95DD7B2121A74A2BC7573BE859E97FB2">
+      <Value>%s Files</Value>
+    </Literal>
+    <Literal ID="84BBFEC0E8E37DBF5A11A842A94B532A">
+      <Value>%s Options</Value>
+    </Literal>
+    <Literal ID="9BBB3DBF33FA4248E323771F6887EF9F">
+      <Value>%s Functions</Value>
+    </Literal>
+    <Literal ID="30901724F87FF89DCD1FE9E8D3A91DA1">
+      <Value>%s Resources</Value>
+    </Literal>
+    <Literal ID="5204E2774E0157211F8B2535BBCCE453">
+      <Value>%s Languages</Value>
+    </Literal>
+    <Literal ID="35A59D31ABA4C7D3ABB341328ED807B5">
+      <Value>"%s" is not a valid app name.</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="AppControlsDockForm">
+    <Property ID="FilterEdit.Hint">
+      <Value>Write here to filter the view's controls.</Value>
+    </Property>
+    <Property ID="FilterEdit.RightButton.Hint">
+      <Value>Click here or press Escape to clear the current filter</Value>
+    </Property>
+    <Property ID="FilterEdit.TextHint">
+      <Value>Search</Value>
+    </Property>
+  </Domain>
+  <Domain Name="AppControlStyleDockForm">
+    <Property ID="FocusStyleTab.Caption">
+      <Value>Focus</Value>
+    </Property>
+    <Property ID="HoverStyleTab.Caption">
+      <Value>Hover</Value>
+    </Property>
+    <Property ID="NormalStyleTab.Caption">
+      <Value>Style</Value>
+    </Property>
+  </Domain>
+  <Domain Name="AppDialogsListDockForm">
+    <Property ID="FilterEdit.Hint">
+      <Value>Write here to filter the app dialogs. Write * to show all.</Value>
+    </Property>
+    <Property ID="FilterEdit.RightButton.Hint">
+      <Value>Click here or press Escape to clear the current filter</Value>
+    </Property>
+    <Property ID="FilterEdit.TextHint">
+      <Value>Search</Value>
+    </Property>
+  </Domain>
+  <Domain Name="AppFramesListDockForm">
+    <Property ID="FilterEdit.Hint">
+      <Value>Write here to filter the app frames. Write * to show all.</Value>
+    </Property>
+    <Property ID="FilterEdit.RightButton.Hint">
+      <Value>Click here or press Escape to clear the current filter</Value>
+    </Property>
+    <Property ID="FilterEdit.TextHint">
+      <Value>Search</Value>
+    </Property>
+  </Domain>
+  <Domain Name="AppToolsDockForm">
+    <Property ID="FilterEdit.Hint">
+      <Value>Write here to filter the app tools. Write * to show all.</Value>
+    </Property>
+    <Property ID="FilterEdit.RightButton.Hint">
+      <Value>Click here or press Escape to clear the current filter</Value>
+    </Property>
+    <Property ID="FilterEdit.TextHint">
+      <Value>Search</Value>
+    </Property>
+    <Literal ID="EE611C8B9DFBBC792A9318C9837B2BCD">
+      <Value>Inputs</Value>
+    </Literal>
+    <Literal ID="1AFA74DA05CA145D3418AAD9AF510109">
+      <Value>Design</Value>
+    </Literal>
+    <Literal ID="5B3EC15499A125805B5BBF8E4AFCEC8C">
+      <Value>Buttons</Value>
+    </Literal>
+    <Literal ID="27B948AC5B24CD345B14FAA60C455F67">
+      <Value>Additional</Value>
+    </Literal>
+    <Literal ID="73F83ED82302C64EDC7C3BCC0E203255">
+      <Value>Non visuals</Value>
+    </Literal>
+    <Literal ID="E576C23D915755D83E2D1F47BD9F6C22">
+      <Value>No results found</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="AppViewsListDockForm">
+    <Property ID="FilterEdit.Hint">
+      <Value>Write here to filter the app views. Write * to show all.</Value>
+    </Property>
+    <Property ID="FilterEdit.RightButton.Hint">
+      <Value>Click here or press Escape to clear the current filter</Value>
+    </Property>
+    <Property ID="FilterEdit.TextHint">
+      <Value>Search</Value>
+    </Property>
+  </Domain>
+  <Domain Name="ProgramDebuggerDockForm">
+    <Property ID="DebuggerOptionsAction.Caption">
+      <Value>Debugger options</Value>
+    </Property>
+    <Property ID="DebuggerOptionsAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="DebuggerOptionsAction.Hint">
+      <Value>Debugger options</Value>
+    </Property>
+    <Property ID="GoBackAction.Caption">
+      <Value>Go back</Value>
+    </Property>
+    <Property ID="GoBackAction.Hint">
+      <Value>Go back one page</Value>
+    </Property>
+    <Property ID="GoForwardAction.Caption">
+      <Value>Go forward</Value>
+    </Property>
+    <Property ID="GoForwardAction.Hint">
+      <Value>Go forward one page</Value>
+    </Property>
+    <Property ID="HTTPServer.ServerSoftware">
+      <Value>App Builder Debugger (Indy powered)</Value>
+    </Property>
+    <Property ID="RefreshAction.Caption">
+      <Value>Refresh the browser</Value>
+    </Property>
+    <Property ID="RefreshAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="RefreshAction.Hint">
+      <Value>Refresh the browser</Value>
+    </Property>
+    <Property ID="RestartAppAction.Caption">
+      <Value>Restart the app</Value>
+    </Property>
+    <Property ID="RestartAppAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="RestartAppAction.Hint">
+      <Value>Click here to restart the app</Value>
+    </Property>
+    <Property ID="RotateAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="RotateAction.Hint">
+      <Value>Alternate between portrait and landscape mode</Value>
+    </Property>
+    <Property ID="SaveDialog.OkButtonLabel">
+      <Value>Save bitmap</Value>
+    </Property>
+    <Property ID="SaveDialog.Title">
+      <Value>Save browser capture</Value>
+    </Property>
+    <Property ID="TakePictureAction.Caption">
+      <Value>Take a browser picture</Value>
+    </Property>
+    <Property ID="TakePictureAction.Category">
+      <Value>Tools</Value>
+    </Property>
+    <Property ID="TakePictureAction.Hint">
+      <Value>Take a picture of the debugger browser</Value>
+    </Property>
+  </Domain>
+  <Domain Name="ProgramMessagesDockForm">
+    <Property ID="CopyMessagesAction.Caption">
+      <Value>Copy messages</Value>
+    </Property>
+    <Property ID="CopyMessagesAction.Hint">
+      <Value>Copy the messages into the clipboard</Value>
+    </Property>
+    <Property ID="SaveDialog.OkButtonLabel">
+      <Value>Save messages</Value>
+    </Property>
+    <Property ID="SaveDialog.Title">
+      <Value>Choose the location to the messages file</Value>
+    </Property>
+    <Property ID="SaveMessagesAction.Caption">
+      <Value>Save to file</Value>
+    </Property>
+    <Property ID="SaveMessagesAction.Hint">
+      <Value>Save the messages into a file</Value>
+    </Property>
+    <Literal ID="A82BE0F551B8708BC08EB33CD9DED0CF">
+      <Value>Information</Value>
+    </Literal>
+    <Literal ID="F40D94334DBE6E357E7241D6FFFD18FC">
+      <Value>Compilation</Value>
+    </Literal>
+    <Literal ID="853AC8747FC951A4D41B7C75CFEC8706">
+      <Value>App Builder saved compilation messages</Value>
+    </Literal>
+    <Literal ID="28FEA9B34A65377129D3D7ACC2EFBDD2">
+      <Value>Generated: %s</Value>
+    </Literal>
+    <Literal ID="7ADD9A008679CF786E7CD80DA81F2F6B">
+      <Value>More information at %s</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="PrintPreviewForm">
+    <Property ID=".Caption">
+      <Value>[App editor print preview]</Value>
+    </Property>
+    <Property ID="CloseAction.Caption">
+      <Value>Close</Value>
+    </Property>
+    <Property ID="CloseItem.Caption">
+      <Value>Close</Value>
+    </Property>
+    <Property ID="FirstPageAction.Caption">
+      <Value>First page</Value>
+    </Property>
+    <Property ID="FirstPageItem.Caption">
+      <Value>First page</Value>
+    </Property>
+    <Property ID="LastPageAction.Caption">
+      <Value>Last page</Value>
+    </Property>
+    <Property ID="LastPageItem.Caption">
+      <Value>Last page</Value>
+    </Property>
+    <Property ID="NextPageAction.Caption">
+      <Value>Next page</Value>
+    </Property>
+    <Property ID="NextPageItem.Caption">
+      <Value>Next page</Value>
+    </Property>
+    <Property ID="PageWidthItem.Caption">
+      <Value>Page width</Value>
+    </Property>
+    <Property ID="PreviousPageItem.Caption">
+      <Value>Previous page</Value>
+    </Property>
+    <Property ID="PrevPageAction.Caption">
+      <Value>Previous page</Value>
+    </Property>
+    <Property ID="Print1.Caption">
+      <Value>Print</Value>
+    </Property>
+    <Property ID="PrintAction.Caption">
+      <Value>Print</Value>
+    </Property>
+    <Property ID="WholePageItem.Caption">
+      <Value>Whole page</Value>
+    </Property>
+    <Property ID="ZoomInOutAction.Caption">
+      <Value>Zoom in / Zoom out</Value>
+    </Property>
+  </Domain>
+  <Domain Name="BatFileModule">
+    <Property ID="SaveDialog.FileTypes[0].DisplayName">
+      <Value>BAT files</Value>
+    </Property>
+    <Property ID="SaveDialog.OkButtonLabel">
+      <Value>Save BAT file</Value>
+    </Property>
+    <Property ID="SaveDialog.Title">
+      <Value>Save BAT file</Value>
+    </Property>
+    <Literal ID="3FE2D0E7103764F727E29CBC45EE929F">
+      <Value>REM Created by DecSoft App Builder %s</Value>
+    </Literal>
+    <Literal ID="18991A4B152586A254C8C7B81B687C6B">
+      <Value>REM More information at %s</Value>
+    </Literal>
+    <Literal ID="2EB67FB88EE9E353B93C31A03F7D48AE">
+      <Value>REM Set our app file in APP variable</Value>
+    </Literal>
+    <Literal ID="8CA190E71E50EA9F6F235DA8F8B2C511">
+      <Value>REM Set DecSoft App Builder CLI path in COMPILER variable</Value>
+    </Literal>
+    <Literal ID="3A82BAC8E1BF674A1F6BFF426A940D2E">
+      <Value>REM Call the compiler passing the app file as argument</Value>
+    </Literal>
+    <Literal ID="ADABD7775653548AFA77819154BF2914">
+      <Value>REM Pause the script execution, so you can view the compiler results</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="ControlEventsModule">
+    <Literal ID="FFDEBBAC29D23A86AAF649981D80103F">
+      <Value>%s Events</Value>
+    </Literal>
+    <Literal ID="E5F459E4B2B059B1AADB16C8C3F88842">
+      <Value>%s %s Events</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="MainModule">
+    <Literal ID="7AE854A2962735E2F0A63F46D217C35E">
+      <Value>Preparing to minimize app CSS and JS code.</Value>
+    </Literal>
+    <Literal ID="F1FD966D1DAF59F7B220F48BB7DAFB48">
+      <Value>App CSS and JS code has been minimized.</Value>
+    </Literal>
+    <Literal ID="482C1299DFA5F98BE79AEC5B557B2395">
+      <Value>Code minimizer error:</Value>
+    </Literal>
+    <Literal ID="EEFDFED89411BC6E6B0E5BA68758D5B2">
+      <Value>Success.</Value>
+    </Literal>
+    <Literal ID="B38C00A86D8DAD472836685D1F7DA81C">
+      <Value>Failed.</Value>
+    </Literal>
+    <Literal ID="7889BE66149F09E806DA3BB1B03524A5">
+      <Value>Elapsed time: %s</Value>
+    </Literal>
+    <Literal ID="B75DDF89F34FE465ED88E4CB48D5C890">
+      <Value>App Builder detect a problem with the program requisites and cannot solve it. Please, reinstall App Builder. The program cannot continue and must be terminated now.</Value>
+    </Literal>
+    <Literal ID="B95CAE2E12E566AC57F25EFF5BE46DA9">
+      <Value>Usage:</Value>
+    </Literal>
+    <Literal ID="577A23D95CB9D71CA2F3566EFF797F1A">
+      <Value>%s "Path" [/debug] [/zipper] [/minimize] </Value>
+    </Literal>
+    <Literal ID="9B536F8120B4C44F791A9CFA46EFF600">
+      <Value>Path: Mandatory. The app's project file path.</Value>
+    </Literal>
+    <Literal ID="EC7EEBFB6A3C0FA55F8D60FDCFB2F210">
+      <Value>/debug: Optional. Use to include debug information.</Value>
+    </Literal>
+    <Literal ID="159D56C716F1F66D0D7358150D09EB84">
+      <Value>/minimize: Optional. Use to minimize the app JS and CSS.</Value>
+    </Literal>
+    <Literal ID="FFC34BBB4B86366FE0A8119928F4D917">
+      <Value>Abstract:</Value>
+    </Literal>
+    <Literal ID="73ADD365026B05A687BC1AD92AA2D0A3">
+      <Value>The App Builder's CLI version can compile your apps in a batch way.</Value>
+    </Literal>
+    <Literal ID="A1ACF4C6599677F2BBE33C6C351FAB9F">
+      <Value>The compile configuration as well other options are directly taken from</Value>
+    </Literal>
+    <Literal ID="7CECBCBE97AC27B600530327A02E5C1D">
+      <Value>the provided app's project file, which is the only one required argument.</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="ProgramAboutDockForm"/>
+  <Domain Name="NewVersionInfoForm">
+    <Property ID=".Caption">
+      <Value>New release found!</Value>
+    </Property>
+    <Property ID="CancelButton.Caption">
+      <Value>Cancel</Value>
+    </Property>
+    <Property ID="FileSaveDialog.OkButtonLabel">
+      <Value>Save the new release</Value>
+    </Property>
+    <Property ID="FileSaveDialog.Title">
+      <Value>Save the new release</Value>
+    </Property>
+    <Property ID="FormTipText.Caption">
+      <Value>A new release of DecSoft App Builder has been found. You can read about the program history with the last release changes. You can proceed to download the latest release now too.</Value>
+    </Property>
+    <Property ID="HelpButton.Caption">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="LatestChangesLabel.Caption">
+      <Value>Latest changes</Value>
+    </Property>
+    <Property ID="OkButton.Caption">
+      <Value>Download the latest release</Value>
+    </Property>
+    <Literal ID="B15FD43C6F6B77F26CF9369ECFE36E0F">
+      <Value>A new product release has been found and the program is getting the latest changes now...</Value>
+    </Literal>
+    <Literal ID="B7C01A8510726666D4116EABDCC248EB">
+      <Value>The download has been cancelled.</Value>
+    </Literal>
+  </Domain>
+  <Domain Name="NavbarItemsForm">
+    <Property ID=".Caption">
+      <Value>Navbar items</Value>
+    </Property>
+    <Property ID="ActivedSubitemCheckBox.Caption">
+      <Value>Actived item</Value>
+    </Property>
+    <Property ID="ActivedSubitemCheckBox.Hint">
+      <Value>Check if you want that the subitem appear actived</Value>
+    </Property>
+    <Property ID="AddButton.Caption">
+      <Value>Update</Value>
+    </Property>
+    <Property ID="AddButton.Hint">
+      <Value>Update the selected item data</Value>
+    </Property>
+    <Property ID="AddItemAction.Caption">
+      <Value>Add</Value>
+    </Property>
+    <Property ID="AddItemAction.Hint">
+      <Value>Add a new item to the items list</Value>
+    </Property>
+    <Property ID="AddSubitemAction.Caption">
+      <Value>Add</Value>
+    </Property>
+    <Property ID="AddSubitemAction.Hint">
+      <Value>Add a new subitem to the items list</Value>
+    </Property>
+    <Property ID="AddSubitemButton.Caption">
+      <Value>Add</Value>
+    </Property>
+    <Property ID="AddSubitemButton.Hint">
+      <Value>Add a new subitem to the items list</Value>
+    </Property>
+    <Property ID="BitBtn1.Hint">
+      <Value>Browser for an icon for the subitem</Value>
+    </Property>
+    <Property ID="BrowseItemIconButton.Hint">
+      <Value>Browser for an icon for the item</Value>
+    </Property>
+    <Property ID="BrowserItemIconAction.Hint">
+      <Value>Browser for an icon for the item</Value>
+    </Property>
+    <Property ID="BrowserSubitemIconAction.Hint">
+      <Value>Browser for an icon for the subitem</Value>
+    </Property>
+    <Property ID="CancelButton.Caption">
+      <Value>Cancel</Value>
+    </Property>
+    <Property ID="DisabledSubitemCheckBox.Caption">
+      <Value>Disabled item</Value>
+    </Property>
+    <Property ID="DisabledSubitemCheckBox.Hint">
+      <Value>Check if you want that the subitem appear disabled</Value>
+    </Property>
+    <Property ID="FormTipText.Caption">
+      <Value>You can specify here the default (since you can change it at runtime) items for the Navbar control.</Value>
+    </Property>
+    <Property ID="HelpButton.Caption">
+      <Value>Help</Value>
+    </Property>
+    <Property ID="HelpButton.Hint">
+      <Value>Show information about this program dialog</Value>
+    </Property>
+    <Property ID="ItemClassEdit.Hint">
+      <Value>Write here optional  item CSS classes</Value>
+    </Property>
+    <Property ID="ItemClassLabel.Caption">
+      <Value>Item class</Value>
+    </Property>
+    <Property ID="ItemDownAction.Hint">
+      <Value>Move down the selected item</Value>
+    </Property>
+    <Property ID="ItemDownButton.Hint">
+      <Value>Move down the selected item</Value>
+    </Property>
+    <Property ID="ItemIconEdit.Hint">
+      <Value>Write here optional  icon</Value>
+    </Property>
+    <Property ID="ItemIconLabel.Caption">
+      <Value>Item icon</Value>
+    </Property>
+    <Property ID="ItemTextEdit.Hint">
+      <Value>Write here the item text</Value>
+    </Property>
+    <Property ID="ItemTextLabel.Caption">
+      <Value>Item text</Value>
+    </Property>
+    <Property ID="ItemUpAction.Hint">
+      <Value>Move up the selected item</Value>
+    </Property>
+    <Property ID="ItemUpButton.Hint">
+      <Value>Move up the selected item</Value>
+    </Property>
+    <Property ID="OkButton.Caption">
+      <Value>OK</Value>
+    </Property>
+    <Property ID="PropertyLabel.Caption">
+      <Value>Items</Value>
+    </Property>
+    <Property ID="RemoveButton.Caption">
+      <Value>Remove</Value>
+    </Property>
+    <Property ID="RemoveButton.Hint">
+      <Value>Remove the selected item and their subitems</Value>
+    </Property>
+    <Property ID="RemoveItemAction.Caption">
+      <Value>Remove</Value>
+    </Property>
+    <Property ID="RemoveItemAction.Hint">
+      <Value>Remove the selected item and their subitems</Value>
+    </Property>
+    <Property ID="RemoveSubitemAction.Caption">
+      <Value>Remove</Value>
+    </Property>
+    <Property ID="RemoveSubitemAction.Hint">
+      <Value>Remove the selected subitem</Value>
+    </Property>
+    <Property ID="RemoveSubitemButton.Caption">
+      <Value>Remove</Value>
+    </Property>
+    <Property ID="RemoveSubitemButton.Hint">
+      <Value>Remove the selected subitem</Value>
+    </Property>
+    <Property ID="SubitemClassEdit.Hint">
+      <Value>Write here optional  item CSS classes</Value>
+    </Property>
+    <Property ID="SubitemClassLabel.Caption">
+      <Value>Subitem class</Value>
+    </Property>
+    <Property ID="SubitemDownAction.Hint">
+      <Value>Move down the selected subitem</Value>
+    </Property>
+    <Property ID="SubitemDownButton.Hint">
+      <Value>Move down the selected subitem</Value>
+    </Property>
+    <Property ID="SubitemIconEdit.Hint">
+      <Value>Write here optional  icon</Value>
+    </Property>
+    <Property ID="SubitemIconLabel.Caption">
+      <Value>Subitem icon</Value>
+    </Property>
+    <Property ID="SubitemsLabel.Caption">
+      <Value>Subitems</Value>
+    </Property>
+    <Property ID="SubitemTextEdit.Hint">
+      <Value>Write here the item text</Value>
+    </Property>
+    <Property ID="SubitemTextLabel.Caption">
+      <Value>Subitem text</Value>
+    </Property>
+    <Property ID="SubitemUpAction.Hint">
+      <Value>Move up the selected subitem</Value>
+    </Property>
+    <Property ID="SubitemUpButton.Hint">
+      <Value>Move up the selected subitem</Value>
+    </Property>
+    <Property ID="UpdateButton.Caption">
+      <Value>Add</Value>
+    </Property>
+    <Property ID="UpdateButton.Hint">
+      <Value>Add a new item to the items list</Value>
+    </Property>
+    <Property ID="UpdateItemAction.Caption">
+      <Value>Update</Value>
+    </Property>
+    <Property ID="UpdateItemAction.Hint">
+      <Value>Update the selected item data</Value>
+    </Property>
+    <Property ID="UpdateSubitemAction.Caption">
+      <Value>Update</Value>
+    </Property>
+    <Property ID="UpdateSubitemAction.Hint">
+      <Value>Update the selected subitem data</Value>
+    </Property>
+    <Property ID="UpdateSubitemButton.Caption">
+      <Value>Update</Value>
+    </Property>
+    <Property ID="UpdateSubitemButton.Hint">
+      <Value>Update the selected subitem data</Value>
+    </Property>
+  </Domain>
+  <Domain Name="AppSearchDockForm">
+    <Property ID="ResultsLabel.Caption">
+      <Value>Search results</Value>
+    </Property>
+    <Property ID="SearchButton.Caption">
+      <Value>Search</Value>
+    </Property>
+    <Property ID="SearchComboBox.Hint">
+      <Value>Write here what you search and then press ENTER</Value>
+    </Property>
+    <Property ID="SearchLabel.Caption">
+      <Value>Search text</Value>
+    </Property>
+    <Property ID="UseMatchCaseButton.Caption">
+      <Value>Match case</Value>
+    </Property>
+    <Property ID="UseMatchCaseButton.Hint">
+      <Value>Check this button to use match case in your search</Value>
+    </Property>
+    <Property ID="UseWholeWordsButton.Caption">
+      <Value>Whole words</Value>
+    </Property>
+    <Property ID="UseWholeWordsButton.Hint">
+      <Value>Check this button to find whole words in your search</Value>
+    </Property>
+    <Literal ID="13348442CC6A27032D2B4AA28B75A5D3">
+      <Value>Search</Value>
+    </Literal>
+    <Literal ID="5535A0CF45D5824D5A8D3C306FF6B30C">
+      <Value>Search text</Value>
+    </Literal>
+    <Literal ID="5AD230B32320F3CA268EEB9157B1BB72">
+      <Value>The search has been cancelled!</Value>
+    </Literal>
+    <Literal ID="EA4788705E6873B424C65E91C2846B19">
+      <Value>Cancel</Value>
+    </Literal>
+    <Literal ID="09CDB37652632A36E8A3B37A3DF770FF">
+      <Value>Searching in "%s" app event...</Value>
+    </Literal>
+    <Literal ID="0EB5AAAC8AD6531D35C9BA27C7EDF376">
+      <Value>"%s" matched in app "%s" event</Value>
+    </Literal>
+    <Literal ID="A7B289DBE3CBCFA0B2438D4E9D8EE6A6">
+      <Value>Searching in app -&gt; "%s" view -&gt; "%s" event...</Value>
+    </Literal>
+    <Literal ID="61B1617922382F6D1C8A2E5583C61D52">
+      <Value>"%s" matched in app -&gt; "%s" view -&gt; "%s" event</Value>
+    </Literal>
+    <Literal ID="A8991F235683C735E234692472CFE440">
+      <Value>Searching in app -&gt; "%s" view -&gt; "%s" control -&gt; "%s" event...</Value>
+    </Literal>
+    <Literal ID="D76916C7EF090AAC9E109F6891B56803">
+      <Value>"%s" matched in app -&gt; "%s" view -&gt; "%s" control -&gt; "%s" event</Value>
+    </Literal>
+    <Literal ID="8B6500FC5C6E1386D80F1036A6E2C888">
+      <Value>No results found! Please, try with other search text or modify the search filters.</Value>
+    </Literal>
+  </Domain>
+</i18nCatalog>

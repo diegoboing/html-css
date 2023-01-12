@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Estilos externos</title>
+    
+<link rel="stylesheet" href="site2.css">
+
+<!--Abaixo o sublinhado nos parágrafos-->
+<style> 
+    h1 {
+        text-decoration: underline;
+    } 
+
+</style>
+    
+</head>
+<body>
+    
+    <h1>Estilo externo via link</h1>
+    <p>Os estilos externos, são estilos criados em CSS e que são chamados como links. Este estilo é o mais usado quando trata-se de códigos que possuem várias páginas. <br>Vantagens: <br>
+    <ul><li>Fácil manutenção.</li>
+        <li>Ajustes de forma imediata em todas as páginas.</li>
+        <li>Possível criação de vários estilos.</li>
+        <li>Para adicionar ao código deve ser chamado via link em forma de seletor.</li></ul> </p>
+        <h1>Demonstração do código</h1>
+        <p><strong>O estilo deve ser criado no formato .CSS. <br>Abaixo um código criado no estilo externo .CSS. <br></strong></p>
+    <pre class="lang:xhtml decode:true"> 
+        <strong>
+            @charset "UTF-8";
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                /*height: 100%;*/
+            }
+            body {
+                background-image: linear-gradient(to right,  #31AFE0, #E47632);
+            }
+            main {
+                background-color: white;/*Fundo da página MAIN*/
+                border-radius: 10px; /*Arredonda o conteúdo da borda, ao invés de deixar quadrado*/
+                box-shadow: 5px 5px 15px rgba(36, 36, 36, 0.842); /* parâmetros, 1 quanto anda para o lado, 2 quanto vai para baixo, 3 quanto vai espalhar e o 4 quanto de transparência terá e a cor*/
+                width: 780px; /*largura do quadrado*/
+                padding: 10px;
+                margin: auto;/*centraliza o conteúdo*/
+            }
+            h1 {
+                color: #2F47AD;
+                text-align: center;
+            }
+            h2 {
+                color: #31AFE0;
+                text-shadow: 1px 1px 1px #144a5fbd;
+                }
+            h3 {
+                color: #31AFE0;
+                text-shadow: 1px 1px 1px rgba(87, 87, 87, 0.5);
+                }
+            p {
+                text-align: justify;
+            }</strong></pre>
+
+    <h1>Código na cabeça / seletor</h1>
+    <p>Formato do link para chamar o .CSS. <br>Exemplo abaixo:</p>
+    <pre class="lang:xhtml decode:true"><strong>link rel="stylesheet" href="site2.css"</strong></pre>
+
+    <h2>Capítulo 1.2</h2>
+    <p>É possível mesclar todas os estilos na mesma página, mas cada um com sua peculiaridade.</p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Estilo externo é um dos mais indicados caso o código da página seja grande, já o estilo interno ou local tem desvantagens e é o tamanho do código caso utilize estilo interno/local.</p>
+
+    <center> <h1><a href="index.html" target="_self" rel="prev">Página inicial</a></h1></center>
+    
+</body>
+</html>

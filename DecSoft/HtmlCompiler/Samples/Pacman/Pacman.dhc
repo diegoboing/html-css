@@ -1,0 +1,20 @@
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlCompiler Version="2022.17">
+  <App>
+    <ID>{05D88FCC-926C-46EB-954B-ABA0BAF5088D}</ID>
+    <Name>Pacman sample app</Name>
+    <IndexHtml>source\index.html</IndexHtml>
+    <Width>1024</Width>
+    <Height>768</Height>
+    <Theme>Windows10 Dark</Theme>
+    <WindowBorder>3</WindowBorder>
+    <Generator>
+      <Name>DecSoft HTML Compiler</Name>
+      <Version>2022.17</Version>
+      <Website>https://www.decsoftutils.com/</Website>
+      <Orders>https://www.decsoftutils.com/store/</Orders>
+      <EMail>info@decsoftutils.com</EMail>
+      <Copyright>©2022 DecSoft HTML Compiler. All rights reserved.</Copyright>
+    </Generator>
+  </App>
+</HtmlCompiler>

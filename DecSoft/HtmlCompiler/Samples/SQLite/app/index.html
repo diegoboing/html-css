@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>     
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+  <title>SQLite sample app</title>
+ </head>
+ <body>
+  <div class="container">
+   <h1 class="mt-3 text-center">
+    Contacts table
+   </h1>
+   <div class="table-responsive mt-3">
+    <table class="table table-dark table-striped table-hover table-border" id="contacts-table">
+     <thead>
+      <tr>
+       <th>#</th>
+       <th>First name</th>
+       <th>Last name</th>
+       <th>Email</th>
+	   <th></th>
+      </tr>
+     </thead>   
+   	 <tbody> 
+	 </tbody>
+    </table>
+   </div>    
+   <button type="button" class="btn btn-primary w-100 mb-4" data-bs-toggle="modal" data-bs-target="#new-contact-modal">
+    Insert new contact
+   </button>   
+  </div>
+
+  <div class="modal" tabindex="-1" id="new-contact-modal">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title">New contact</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+      <div>
+	   <label for="first_name">First name</label>
+       <input type="text" class="form-control" id="first_name" placeholder="Type the first name" />
+      </div>
+      <div class="mt-3">
+	   <label for="last_name">Last name</label>
+       <input type="text" class="form-control" id="last_name" placeholder="Type the last name" />
+      </div>
+      <div class="mt-3">
+	   <label for="email">EMail</label>	  
+       <input type="text" class="form-control" id="email" placeholder="Type the EMail" />
+      </div>
+     </div>
+     <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      <button type="button" class="btn btn-primary" id="save-new-contact">Save changes</button>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/sql.js"></script>
+  <script>
+  // We store in the database variable the instance of a SQL.Database object (see below).
+  var database = null;
+
+  // We use the below function to save the database into a file.
+  function saveDatabase() {
+    // First we export the database and get a blob object of it
+    var blob = new Blob([database.export()]);
+	// Then we create a FileReader object instance
+    var reader = new FileReader();
+	// Then read the blobg with the FileReader object
+	reader.readAsDataURL(blob); 	   
+	// ... when the load ends...
+	reader.onloadend = function() {
+	  // Get a base 64 representation of the contents
+      var base64data = reader.result.split(',')[1];                
+	  // And finally use dhc.base64.decodeToFile to save the database file
+      dhc.base64.decodeToFile({
+        filePath: 'contacts.db',
+        contents: base64data
+      }).then(() => {
+        console.info('The database file has been written!');   
+      },
+      (error) => {
+        alert('An error occur while save the database file: ' + error);
+      });
+    }  
+  }
+  
+  // We use this function to update the table of contacts from the database
+  function updateContactsTable() {
+    // Perform a SELECT query to get the contacts stored in the database
+    var rows = database.exec("SELECT ROWID, first_name, last_name, email FROM contacts;");	
+	if (rows.length === 0) {
+	  return false;
+	}	
+	$('#contacts-table tbody').html('');
+	// Iterates over the query result and add new rows into the contacts HTML table
+	for (var i = 0; i < rows[0].values.length; i++) {
+	  var
+	    html = '<tr id="row-id-' + rows[0].values[i][0] + '">';
+	  html += '<td>' + rows[0].values[i][0] + '</td>';
+	  html += '<td>' + rows[0].values[i][1] + '</td>';
+	  html += '<td>' + rows[0].values[i][2] + '</td>';
+	  html += '<td>' + rows[0].values[i][3] + '</td>';
+	  html += '<td><button data-rowid="' + rows[0].values[i][0] + '" class="btn btn-sm btn-danger delete-row-button">Delete</button></td>';
+	  html += '</tr>';	  
+	  $('#contacts-table tbody').append(html);
+	}
+  }
+
+  // The DOM is ready!
+  $(function () {
+  
+    // Prepare a click handler for the delete-row buttons that we place inside the contacts table rows
+    $('#contacts-table tbody').on('click', '.delete-row-button', function() {
+      var  
+	    rowid = $(this).data('rowid'),
+	    rowidSel = '#row-id-' + rowid;
+	  database.run('DELETE FROM contacts WHERE ROWID = ' + rowid);
+	  $(rowidSel).remove();
+	  updateContactsTable();
+	  saveDatabase();		
+    });  
+  
+    // Prepare a click handler for the button which we use to add new contacts into the database
+    $('#save-new-contact').on('click', function () {
+      var  
+	    first_name = $.trim($('#first_name').val()),
+	    last_name = $.trim($('#last_name').val()),
+	    email = $.trim($('#email').val()),
+	    modal = bootstrap.Modal.getInstance(document.getElementById('new-contact-modal'));
+
+	  if (first_name === '') {
+	    alert('Please, provide a first name');
+	    $('#first_name').focus();
+	    return false;
+	  }  
+	
+	  if (last_name === '') {
+	    alert('Please, provide a last name');
+	    $('#last_name').focus();
+	    return false;
+	  }  	
+	
+	  if (email === '') {
+	    alert('Please, provide an Email');
+   	    $('#email').focus();
+	    return false;
+	  }  		
+	  
+	  $('#first_name').val('');
+	  $('#last_name').val('');
+	  $('#email').val('');
+	  
+	  // Insert the new contact into the database
+	  database.run("INSERT INTO contacts VALUES (?,?,?)", [first_name, last_name, email]);  
+  	  modal.hide();
+	  
+	  // Note that probably there is a better method than update the contacts table and save the database
+	  // always that we add a new contact, but, we place it this here for simplicity.
+	  updateContactsTable();
+	  saveDatabase();
+    });  
+  
+    // When the app is loaded we search for the "contacts.db" file using the dhc.files.fileExists function.
+    dhc.files.fileExists({
+      filePath: 'contacts.db'
+    }).then((result) => {
+      if (result) {
+	    // If the file exists, just read it using an ajax call (this is provided by the jQuery library in this case)
+        $.ajax({
+          method: 'GET',
+          url: 'contacts.db',
+          xhrFields: {responseType: 'arraybuffer'}
+        }).then(function (responseData) {
+		  // Once we read the file, we can create an object instance of the SQL.Database class
+	      initSqlJs({}).then(function (SQL) {
+            database = new SQL.Database(new Uint8Array(responseData));
+			updateContactsTable()
+	      });
+        }); 
+  	  } else {
+	    // If the database file did not exists (like as the first start of the app)
+	    initSqlJs({}).then(function (SQL) {
+		  // We create an instance of a SQL.Database class and...
+          database = new SQL.Database();
+		  // Create the database table to store the contacts
+          database.exec('CREATE TABLE contacts (first_name TEXT NOT NULL, last_name TEXT NOT NULL, email TEXT NOT NULL);');
+		  updateContactsTable()
+	    });
+  	  }
+    },
+    (error) => {
+      alert('An error occur while check if the database file exists: ' + error);
+    });	  
+  });
+  </script>  
+ </body>
+</html>

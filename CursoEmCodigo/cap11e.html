@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação...</title>
+    
+    <link rel="shortcut icon" href="LogoImagemRDK/apple-touch-icon.png" type="image/x-icon"><!--ADICIONAR FAVICON - IMAGEM NA ABA NA PARTE SUPERIOR DO NAVEGADOR-->
+   
+    <!--Abaixo o código para utilização de Estilos CSS com link-->
+    <link rel="stylesheet" href="estilo1.css">
+
+    </head>
+    <body>
+        <h1>Colocando vídeo no seu site localmente</h1>
+        <p>Este vídeo está inserido no meu próprio servidor.</p>
+        <strong><h1>Este é uma das formas a ser desenvolvida.</p></strong>
+        <video src="videos/neve.mp4" controls width="500"></video>
+        <br>
+        <br>
+        <h1> O código abaixo é o correto pra utilização.</h1>
+        <p> levando em conta que se o navegador não rodar o primeiro formato, tenta o próximo, e o próximo e assim por diante.</p>
+        <p><strong>Este código permite trocar a imagem de início de forma fácil e adicionando apenas o POSTER e o caminho da imagem.</strong></p>
+        <center> <video width="500" poster="imagens/musica.jpg" controls autoplay loop>
+            <source src="videos/neve.mp4" type="video/mp4">
+            <source src="videos/neve.mp4" type="video/WebM">
+            <source src="videos/neve.mp4" type="video/ogg">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <BR>Essa frase serve caso os formatos de vídeos não sejam reconhecidos pelo navegador, então retona a mensagem.</BR></p>
+        </video></center>
+        <strong><p>WIDTH (configura o tamanho do vídeo), POSTER(imagem inicial), CONTROLS(controle do player)</p></strong>
+        <br>   
+        <h1><a href="index.html" target="_self" rel="prev">Página inicial</a></h1>
+    </body>
+</html>

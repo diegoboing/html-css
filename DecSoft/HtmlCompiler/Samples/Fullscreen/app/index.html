@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Fullscreen sample app</title>
+ </head>
+ <body>
+  <div id="runtime-text">
+   You must compile this sample app in order to see it working, since it's not work as expected at designtime.
+  </div> 
+  <script>
+
+   dhc.isRuntime().then((isRuntime) => {
+     if (isRuntime) {
+	   document.getElementById('runtime-text').innerHTML = 'Now yes! Try to press the F11 key...';
+	 }
+   });
+
+   window.addEventListener('keyup', (event) => {
+   
+     if (event.keyCode !== 122) {
+	   return false;
+	 }
+
+     // The pressed key is F11, so look if we are already in fullscreen
+	 // and enter or exit the fullscreen mode.
+	 
+	 dhc.app.inFullscreen().then((inFullscreen) => {
+
+	   if (!inFullscreen) {
+	     dhc.app.enterFullscreen();
+	   } else {
+	     dhc.app.exitFullscreen();	   
+	   }  
+	 });
+   });
+   
+  </script>
+ </body>
+</html>

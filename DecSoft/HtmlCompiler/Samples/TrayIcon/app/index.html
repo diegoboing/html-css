@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>TrayIcon sample app</title>
+ </head>
+ <body>
+  <div id="runtime-text">
+   You must compile this sample app in order to see it working, since it's not work as expected at designtime.
+  </div> 
+  <div id="runtime-controls" style="display: none; margin-top: 20px;">
+   <button id="show-icon-button">Show the tray icon</button>
+   <button id="hide-icon-button">Hide the tray icon</button>
+  </div>
+  <script>
+  
+   // The tray icon works only once our app has been compiled, in other words, works at runtime
+   dhc.isRuntime().then((isRuntime) => {
+   
+     if (!isRuntime) {
+	   return false;
+     }
+
+     // Ok, we are at runtime, so hide the "runtime required" text
+	 document.getElementById('runtime-text').innerHTML = '';
+	 
+	 // And we can also show the runtime controls for this sample app
+	 document.getElementById('runtime-controls').style.display = 'block';
+   });
+
+   document.getElementById('show-icon-button').addEventListener('click', function () {
+     // Call to "dhc.trayMenu.showIcon"
+     dhc.trayMenu.showIcon()
+	  .then(() => {
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray icon has been successfully shown!';
+	  });       
+   }); 
+
+   document.getElementById('hide-icon-button').addEventListener('click', function () {
+     // Call to "dhc.trayMenu.hideIcon"
+     dhc.trayMenu.hideIcon()
+	  .then(() => {
+	    // The tray menu has been created!
+	    document.getElementById('runtime-text').innerHTML = 'The tray icon has been successfully hidden!';
+	  });       
+   }); 
+
+   // The "dhc.events.onTrayIconClick" is called when the tray icon has been clicked
+   dhc.events.onTrayIconClick = function () {
+     alert('The tray icon has been clicked!');
+   };
+  </script>
+ </body>
+</html>

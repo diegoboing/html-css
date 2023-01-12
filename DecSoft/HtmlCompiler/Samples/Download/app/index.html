@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Download sample app</title>
+ </head>
+ <body>
+  <div>
+   <button id="start-download-button">Download file</button>
+   <button id="abort-start-download-button" disabled="true">Abort download</button>
+   <div id="download-progress"></div>
+  </div> 
+  <script>
+  
+   var 
+     // We share this variable between the download and the abort buttons
+     httpRequest = null;
+  
+   // Prepare a handler for the abort download button, in order to abort a starting download operation
+   document.getElementById('abort-start-download-button').addEventListener('click', function () {
+     httpRequest.abort();  
+	 document.getElementById('download-progress').innerHTML = ''; 
+	 document.getElementById('start-download-button').removeAttribute("disabled"); 	 
+	 document.getElementById('abort-start-download-button').setAttribute("disabled", true); 	 
+	 alert('The download has been aborted!');
+   });
+
+   // Prepare a handler for the start download button  
+   document.getElementById('start-download-button').addEventListener('click', function () {
+
+     // Show the save file dialog to let the user to choose where to download the file   
+     dhc.dialogs.saveFile({
+       title: 'Save sample video file',
+	   fileName: 'sample.mp4',
+       fileTypes: 'MP4 video files|*.mp4',
+       overwritePrompt: true	  
+ 	 }).then((filePath) => {
+	 
+	   if (filePath === '') {
+	     // The user cancel the dialog
+	     return;
+	   }
+	 
+	   // We have a choosed file path, so, start to download it
+	   
+	   document.getElementById('start-download-button').setAttribute("disabled", true); 	 
+	   document.getElementById('abort-start-download-button').removeAttribute("disabled"); 	 
+
+       // Create XMLHttpRequest instance
+       httpRequest = new XMLHttpRequest();
+	   
+	   // Note that we must have CORS permissions enabled for the file to be downloaded
+       httpRequest.open('GET', 'https://www.decsoftutils.com/Humm/Sites/Main/Views/Data/DecSoft/HtmlCompiler/Samples/Download/sample.mp4', true);
+	   
+	   // Specify that we want the response as an array buffer
+       httpRequest.responseType = 'arraybuffer';
+
+       // Prepare a handler for the XMLHttpRequest which is fired while the download is in progress
+       httpRequest.onprogress = function (event) {
+         document.getElementById('download-progress').innerHTML = event.loaded + ' / ' + event.total;  
+       };
+
+       // Prepare a handler for the XMLHttpRequest which is fired if an error occur while download the file
+       httpRequest.onerror = function () {
+         alert('An error occurred during the download');
+       };
+
+       // Prepare a handler for the XMLHttpRequest which is fired when the file download finished
+       httpRequest.onload = function(oEvent) {
+
+         // Disable the abort button and re-enable the start download button
+	     document.getElementById('abort-start-download-button').setAttribute("disabled", true); 	 
+	     document.getElementById('start-download-button').removeAttribute("disabled"); 	 
+
+         // Get a blob from the HTTP request response: note that the file can be other, so the MIME type
+         var blob = new Blob([httpRequest.response], {type: "video/mp4"});
+
+		 // Once we get the blob, prepare a FileReader to read it
+         var 
+		   reader = new FileReader();
+			 
+		 // Read the blob as a Base64 string
+         reader.readAsDataURL(blob); 
+		   
+		 // Once we read the blob with the FileReader
+         reader.onloadend = function() {
+		   
+		   // Get the Base64 string from the readed blob
+           var 
+			  // Note that in this specific case we no need the first Base64 header part, 
+			  // so we skip it with split, getting only the pure Base64 string
+		      base64data = reader.result.split(',')[1];                
+
+           // Now we can save the Base64 into a file, after internally decode it by HTML Compiler
+           dhc.base64.decodeToFile({
+             filePath: filePath,
+             contents: base64data
+           }).then(() => {
+             alert('The sample video file has been written!');   
+           },
+           (error) => {
+             alert('An error occur: ' + error);
+           });
+         }
+       };
+
+       // Execute the HTTP request, that is, start the download of the file
+       httpRequest.send();  
+	 });	
+   });
+   
+  </script>
+ </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Hello sample app</title>
+ </head>
+ <body>
+  <div>
+   <button id="get-htc-version">Get DecSoft HTML Compiler version</button>
+  </div> 
+  <script>
+   document.getElementById('get-htc-version').addEventListener('click', function () {
+     dhc.hello().then(htcVersion => {
+       alert('The app is running in DecSoft HTML Compiler ' + htcVersion + ' version');   
+     });     
+   });
+  </script>
+ </body>
+</html>

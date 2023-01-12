@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Window sample app</title>
+ </head>
+ <body>
+  <div>
+   <div>
+    <button id="get-window-style">Get window style</button>
+    <button id="set-window-style-normal">Set window normal style</button>
+    <button id="set-window-style-ontop">Set window on top style</button>
+   </div>
+   <div style="margin-top: 10px;">
+    <button id="get-window-state">Get window state</button>
+    <button id="set-window-state-normal">Set window state normal</button>
+    <button id="set-window-state-minimized">Set window state minimized</button>
+    <button id="set-window-state-maximized">Set window state maximized</button>
+   </div>   
+   <div style="margin-top: 10px;">
+    <button id="get-window-title">Get window title</button>
+	<input type="text" value="My new title" id="window-title-input" />
+    <button id="set-window-title">Set window title</button>
+   </div>      
+  </div> 
+  <script>
+   document.getElementById('get-window-style').addEventListener('click', function () {
+     dhc.window.getStyle().then(style => {
+       alert('The app window style is: ' + style);   
+     });     
+   });
+   
+   document.getElementById('set-window-style-normal').addEventListener('click', function () {
+     dhc.window.setStyle({style: 'normal'}).then(() => {
+       alert('The window style has been established!');   
+     });     
+   });   
+   
+   document.getElementById('set-window-style-ontop').addEventListener('click', function () {
+     dhc.window.setStyle({style: 'ontop'}).then(() => {
+       alert('The window style has been established!');   
+     });     
+   }); 
+
+   document.getElementById('get-window-state').addEventListener('click', function () {
+     dhc.window.getState().then(state => {
+       alert('The app window state is: ' + state);   
+     });     
+   }); 
+   
+   document.getElementById('set-window-state-normal').addEventListener('click', function () {
+     dhc.window.setState({state: 'normal'}).then(() => {
+       alert('The window state has been established!');   
+     });     
+   });   
+   
+   document.getElementById('set-window-state-minimized').addEventListener('click', function () {
+     dhc.window.setState({state: 'minimized'}).then(() => {
+       alert('The window state has been established!');   
+     });     
+   });      
+   
+   document.getElementById('set-window-state-maximized').addEventListener('click', function () {
+     dhc.window.setState({state: 'maximized'}).then(() => {
+       alert('The window state has been established!');   
+     });     
+   });
+
+   document.getElementById('get-window-title').addEventListener('click', function () {
+     dhc.window.getTitle().then((title) => {
+       alert('The window title is currently: ' + title);   
+     });     
+   });
+   
+   document.getElementById('set-window-title').addEventListener('click', function () {
+     dhc.window.setTitle({title: document.getElementById('window-title-input').value}).then(() => {
+       alert('The window title has been established!');   
+     });     
+   });   
+   
+  </script>
+ </body>
+</html>

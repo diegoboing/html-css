@@ -1,0 +1,16 @@
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlCompiler Version="2022.17">
+  <App>
+    <ID>{8A47C486-D08B-4498-A067-332B9FD531D9}</ID>
+    <Name>MainMenu sample app</Name>
+    <IndexHtml>app\index.html</IndexHtml>
+    <Generator>
+      <Name>DecSoft HTML Compiler</Name>
+      <Version>2022.17</Version>
+      <Website>https://www.decsoftutils.com/</Website>
+      <Orders>https://www.decsoftutils.com/store/</Orders>
+      <EMail>info@decsoftutils.com</EMail>
+      <Copyright>©2022 DecSoft HTML Compiler. All rights reserved.</Copyright>
+    </Generator>
+  </App>
+</HtmlCompiler>

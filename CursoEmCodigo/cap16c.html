@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    
+    <style>
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cyan;
+        margin: 0px;
+       }
+       header {
+        background-color: bisque;
+        padding: 10px;
+        margin: 10px;
+       }
+       nav {
+        background-color: blueviolet;
+        padding: 3px;
+
+       }
+       nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin: 30px;
+       }
+       nav > a:hover {
+        text-decoration: underline;
+       }
+
+       main {
+        background-color: darkgrey;
+        padding: 10px;
+        margin: 10px;
+       }
+       article {
+        background-color: teal;
+        padding: 5px;
+
+       }
+       article > aside {
+        background-color: slategrey;
+       }
+       footer {
+        background-color: tomato;
+        color: white;
+        text-align: center;
+        padding: 0.3px;
+        margin: 0px;
+       }
+    </style>
+
+</head>
+<body>
+    <h1>HTML4 e HTML5</h1>
+    <p>As div no HTML4 era usada da seguinte forma: <br>div id=cabcecalho, div id=menu, div id=rodape e assim por diante. Mas com o HTML5 agora é usado pensando na semântica.</p>
+    <p>DIV Caixa do tipo BOX-Leve - SPAN Caixa do tipo inline-level.</p>
+    <p>HEADER - cabeçãlho</p>
+    <p>main - Conteúdo principal</p>
+    <p>footer - rodapé</p>
+   
+    <header> <!--Cabeçalho--> 
+        <h1>Meu site</h1>
+        <nav> <!--NAV para navegação, MENU.-->
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+           <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"> 
+            <p>Esportes Política Tecnologia</p>
+        </section> <!--Seções dentro do site-->
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic eum corrupti, debitis, laboriosam laudantium cumque tempore laborum officia accusamus perspiciatis illo consequatur pariatur id harum necessitatibus quibusdam! A, distinctio dolorem.</p>
+                <aside>
+                    <p>Artigo escrito por Diego</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>Desenvolvido por RDK Eletrônica.</p>
+    </footer>
+    
+</body>
+</html>

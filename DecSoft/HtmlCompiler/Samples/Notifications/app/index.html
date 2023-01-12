@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Notifications sample app</title>
+ </head>
+ <body>
+  <div id="result">
+  </div>
+  <div>
+   <button id="show-notification-1-button">Show notification 1</button> 
+   <button id="show-notification-2-button">Show notification 2</button> 
+  </div> 
+  <script>
+   document.getElementById('show-notification-1-button').addEventListener('click', function () {
+
+     dhc.system.notification({
+	  name: "notification-1", 
+	  title: "My notification 1 title", 
+	  body: "My notification 1 body"
+	 })
+	 .then((result) => {
+       if (!result) {
+		 //alert('Notifications are not supported in this Windows version!');
+       }
+     });
+          
+   });
+   
+   document.getElementById('show-notification-2-button').addEventListener('click', function () {
+
+     dhc.system.notification({
+	  name: "notification-2",
+	  title: "My notification 2 title", 
+	  body: "My notification 2 body"
+	 })
+	 .then((result) => {
+       if (!result) {
+		 //alert('Notifications are not supported in this Windows version!');
+       }
+     });
+          
+   });   
+   
+   dhc.events.onNotificationClick = function (notifName) {
+   
+     alert('The notification with name: ' + notifName + ' has been clicked!');
+   };   
+  </script>
+ </body>
+</html>

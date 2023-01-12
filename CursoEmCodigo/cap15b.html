@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes em CSS</title>
+    
+    <link rel="shortcut icon" href="LogoImagemRDK/apple-touch-icon.png" type="image/x-icon">
+    <style>
+        div {
+            display: inline-block;/*inline-block = tudo na mesma linha*/
+            background-color: lightgray;
+            border:  2px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        /*
+        div#d1 {
+            background-color: blue;
+        }*/
+        div:hover { /*hover: Estou aplicando a pseudo-class na DIV - HOVER quando passo o mouse por cima fica na cor configurada. Chamado configuração de estado.*/
+            background-color: yellow;
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+
+    <h1>DIV</h1>
+    <p>Usa toda a linha da escrita.</p>
+
+    <h1>Lembrando id (HTML) = # (CSS)</h1>
+    <h1>class (HTML) e . (CSS) e : (pseudo-class) </h1>
+    <p>: (pseudo-class) deve estar relacionada a um elemento ou a uma classe</p>
+
+
+    <h1>Exemplo de Hover</h1>
+    <p><a href="cap15ba.html" target="_self" rel="next"><strong>Clique aqui para ver o exemplo de hover.</strong></a></p>
+
+    <h1>Declaração tag DIV HTML</h1>
+    <pre class="lang:xhtml decode:true">
+    <strong>
+        body>
+        div id="d1">01</div>
+        div id="d2">02</div>
+        div id="d3">03</div>
+        h1>DIV /h1>
+        p>Usa toda a linha da escrita /p>
+        h1>Lembrando id (HTML) = # (CSS) /h1>
+        h1> class (HTML) e . (CSS) e : (pseudo-class) /h1>
+        p> : (pseudo-class) deve estar relacionada a um elemento ou a uma classe
+    </strong></p
+    </pre>
+
+
+    <center> <a href="index.html" target="_self" rel="prev"><strong>Página inicial</strong></a></center></h1>
+</body>
+</html>
