@@ -1,0 +1,109 @@
+<!--Comando para comentários-->
+<!---->
+<!--&lt; Menor que < LESS THAN -- Adicionar símbolo e no final   
+    &gt; GREATER THAN Maior que > ficaria assim &lt; Símbolo &gt;    --></p> <!--P para parágrafo-->
+<!--BR pra fazer quebra de parágrafos-->
+<!--HR para criar uma linha horizontal e não tem fechamento-->
+<!--&#x -- Comando pra add emoji-->
+<!--Colocar imagem na ABA no canto esquerdo, digitar link:favicon e escolher o arquivo editado no favicon.cc e .io-->
+<!--LOREM -- Simula textos para parágrafos-->
+<!--h1 primeiro parágrafo, h2 segundo, h3 terceiro, h4 quarto até h6-->
+<!--Colocar endereço <ADDRESS>-->
+<!--HTML Semântica, significado. CSS estilo, forma...-->
+<!--Itálico -> <I> -->
+<!--Strong para NEGRITO - TAG Semântica-->
+<!--<!--Negrito com EM (semântica) - CRTL Shift P digita EM depois enter-- -->
+<!--MARK - Marcar o texto, ex caneta marca texto-->
+<!--Dentro da TAG mark consegue trocar a cor da marcação com STYLE backgroun-color-->
+<!--SUP (envelopar) CTRL + Shift + P - Simbolo como potência, acima do número-->
+<!--SUB (envelopar) CTRL + Shift + P - Fazer números como ex o símbolo do H2O, o 2 embaixo-->
+<!--INS (envelopar) - Riscar o texto - TAG semântica-->
+<!--CODE (envelopar) pra ajustar o espaçamento para as letras e espaços.-->
+<!--PRE (Envelopar) Serve para organizar, indentar o código, exibe na página programda e não somente no editor. PRA ORGANIZAR O CÓDIGO PRA ESQUERDA, SHIFT+TAB, SE QUISER MAIS PRA DIREITA SOMENTE TAB, MAS PRECISA SELECIONAR O CÓDIGO-->
+<!--Organiza a fonte tamanho e espaço de forma padrão. CODE pra ajustar o espaçamento para as letras e espaços. Fonte monoespaçada. PRA ORGANIZAR O CÓDIGO PRA ESQUERDA, SHIFT+TAB, SE QUISER MAIS PRA DIREITA SOMENTE TAB, MAS PRECISA SELECIONAR O CÓDIGO-->
+<!--Q (envelopar) para utilizar em citações, coloca entre ""-->
+<!--Serve para citações, faz o recuo, se for de algum site utilizar o CITE= e colocar o link, não exibirá na programação, mas estará na página indicando os criadores daquele conteúdo ou livro, etc...-->
+<!--ABBR (envelopar) Quando coloca o ponteiro do mouse sobre a silga aparece o seu significado-->
+<!--BDO R - Coloca o texto invertido-->
+<!--Ordena a lista e numera e caso necessário algum mudança, faz a alteração automáticamente sempre colocando nas palavras e frases que serão numeradas LI. OL (lista organizada) e dentro de OL LI-->
+<!--Caso queira mudar a letra ou o início da numeração TYPE (tipo e tamanho letra) e START (inicia a partir de tal número) OU invés de número fazer as ordens com letras, a, b c, mudando o TYPE para A ou a e se for números romanos, de I ou i-->
+<!--UL não precisa de ordem, apenas aparece as BOLINHAS na frente dos itens-->
+<!--TYPE DISC, SQUARE ou CIRCLE - muda a bolinha na frente dos itens descritos abaixo-->
+<!--DL depois abre DT e DD, serve para deslocar o texto abaixo como ex o tab.-->
+<!--a href (envelopar A) para adicionar links. Marca a frase ou palavra de deixa como hiperlink, só clicar e vai direcionar para o link configurado-->
+<!--a href (envelopar A) para adicionar links. Marca a frase ou palavra de deixa como hiperlink, só clicar e vai direcionar para o link configurado
+        REL="EXTERNAL" LEVA PARA UM LINK EXTERNO
+        TARGET="_BLANK" ABRE UMA NOVA ABA, PÁGINA NOVA PARA NÃO SOBRE POR A PÁGINA DO MEU SITE-->
+<!--CRTL+espaço para escolher outra página na pasta ou imagem, etc...-->
+<!--REL="next" aponta para a próxima página, ajuda o acesso ser mais rápido e REL="prev" para retornar.
+        Para chamar a próxima página A (envelopar) e CTRL+espaço, escolha a index2 para chamar a próxima página sendo no mesmo site/página-->
+<!-- REL="NOFOLLOW" Significa que para o mecanismo de busca o site informado não tem o AVAL da página que ele está contido.-->
+<!--# no lugar do link é pra informar que é um link vazio.-->
+<!--type="application/pdf para forçar o download sem abrir o arquivo junto com download="nomearquivo"
+            TYPE estão nesse site: https://www.iana.org/assignments/media-types/media-types.xhtml-->
+
+<!--<img src="CTRL+espaço" alt="NomeDaImagem"><a href="LinkDaPágina" target="_blank" rel="externa1">Youtube.com/<strong>RDKeletronica</a></strong></li>
+<!--source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png" 
+        Max para delimitir o tamanho da imagem, srcset caminho da imagem OPCIONAL, se o navegador for menor que o tamanho ajustado, então abre outra imagem. 
+    OBS: O código precisar estar na ordem pra abertura das imagens, ex GRANDE, MEDIA, PEQUENA, MUITO PEQUENA, ETC..-->
+ <!--<audio src="midia/nao-reclame.mp3" controls autoplay></audio><!--O código acima não funcionou o AUTOPLAY, mas é uma forma de utilizar músicas - Formatos de áudio compatíveis: MP3, WAV e OGG
+PRÓXIMA OPÇÃO
+<audio preload="metadata" autoplay(reproduz autom) controls(imagem do play) loop(repeat)>
+       <source src="midia/nao-reclame.mp3" type="audio/mp3"> 
+       <source src="midia/nao-reclame-ogg.ogg" type="audio/ogg">
+       <source src="midia/nao-reclame-wav.wav" type="audio/wav">
+       <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/nao-reclame.mp3">Clique aqui para baixar o áudio</a></p>
+    </audio> Faz um código para cada formato de áudio--> 
+<!--Vídeos (formatos) suportados por HTML5 MP4, M4V, WEBM, OGG
+    Programa HANDBRAKE para converter os formatos e qualidade de vídeos.
+Criar código para cada formato, para evitar problema com incompatibilidade de navegador
+<video width="200"(tamanho do vídeo) poster="imagens/aviao-png.png"(caminho) controls(exibição do player) autoplay(início auto) loop(repetição)>
+    <source src="videos/aviao-m4v.m4v" type="video/m4v">--> 
+<!--Para adicionar vídeos do YouTube basta clicar em compartilhar no vídeo e incorporar e simplesmente COLAR-->
+<!--<center> Exemplo de como adicionar vídeos
+    <h1>Vídeos legais para assistir</h1>
+    <iframe width="460" height="215" src="https://www.youtube.com/embed/f8TEGm7jEwI?start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Código pra adicionar cor de fundo e da letra
+    <body style="background-color: lightskyblue;(fundo) 
+    font-family: Arial, Helvetica, sans-serif;"> <h1 style="color: blue;(letra)">Capítulo 1</h1>-->
+<!--Organizar os espaçamentos: style="text-align: justify;"-->
+
+<!--Código para estilos locais na CABEÇA DO CÓDIGO:
+ <style>
+        body {
+            background-color: lightsteelblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        h2 {
+            color: darkred;
+            background-color: lightblue;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>-->
+
+<!--Estilos com link
+link rel="stylesheet" href="style.css" (cabeça do código)
+
+@charset "UTF-8"; (Um novo html criado pra utilização como link)
+body {
+    background-color: rgb(107, 107, 117);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+h1 {
+    color: rgb(12, 12, 27);
+}
+h2 {
+    color: rgb(252, 252, 252);
+    background-color: rgb(158, 57, 57);
+}
+p {
+    text-align: justify;
+}
+-->

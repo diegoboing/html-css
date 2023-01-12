@@ -1,0 +1,122 @@
+<!DOCTYPE html><!--Versão do editor, HTML5-->
+<html lang="pt-br"><!--Linguagem nativa do site-->
+<head>
+    <meta charset="UTF-8"> <!--Utilização de caracteres especiais e acentos-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Utilização de toda a tela do navegador linhas 6, 7 e 8 - Essa tag não tem fechamento-->
+    <meta name="viewport" //
+    content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="LogoImagemRDK/apple-touch-icon.png" type="image/x-icon"><!--ADICIONAR FAVICON - IMAGEM NA ABA NA PARTE SUPERIOR DO NAVEGADOR-->
+
+    <title>Listas</title> <!--Títutlo do arquivo -->
+    <body>
+        <h1>Trabalhando com listas</h1> 
+        <h2>Listas ordenadas</h2><!--Lista que a ordem faz a diferença-->
+        <ol type="" start="1"><!--Caso queira mudar a letra ou o início da numeração TYPE (tipo e tamanho letra) e START (inicia a partir de tal número) OU invés de número fazer as ordens com letras, a, b c, mudando o TYPE para A ou a e se for números romanos, de I ou i-->
+            <li>Acordar</li>
+            <li>Ligar para pessoa</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a faculdade</li>
+            <li>Almoçar</li>
+            <li>ir para o trabalho</li>
+        </ol><!--Ordena a lista e numera e caso necessário algum mudança, faz a alteração automáticamente sempre colocando nas palavras e frases que serão numeradas LI. OL (lista organizada) e dentro de OL LI-->
+
+        <h2>Listas não ordenadas</h2>
+        <ul type="square"><!--TYPE DISC, SQUARE ou CIRCLE - muda a bolinha na frente dos itens descritos abaixo-->
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+        </ul><!--UL não precisa de ordem, apenas aparece as BOLINHAS na frente dos itens-->
+
+        <h2>Juntando listas versão 1.0 - Minhas linguagens favoritas</h2>
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+            <li>Novas</li>
+            <ol type="a" start="5">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+        </ol>
+        <h2>Meus jogos favoritos</h2>
+        <ol>
+            <li>NES</li>
+            <ol type="">
+                <li>Mario Bros</li>
+                <ul type="circle">
+                    <li>Mario Bros 3</li>
+                    <li>Mario: Lost Level</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+            </ol>
+            <li>SNES</li>
+            <ol type="">
+                <li>Mario</li>
+                <li>Donkey Kong</li>
+            </ol>
+            <li>PlayStation</li>
+            <ol type="">
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ol>
+        </ol>
+        <h2>Lista de definição</h2>
+        <dl>
+            <dt>Termo - HTML</dt>
+            <dd>Demarcação - Linguagem de marcação para a criação do conteúdo de um site</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação e interatividade de um site</dd>
+        </dl><!--DL depois abre DT e DD, serve para deslocar o texto abaixo como ex o tab.-->
+
+    </body>
+
+   
+   
+ 
+
+ 
+</html>
+<!--Comando para comentários-->
+<!---->
+<!--&lt; Menor que < LESS THAN -- Adicionar símbolo e no final   
+    &gt; GREATER THAN Maior que > ficaria assim &lt; Símbolo &gt;    --></p> <!--P para parágrafo-->
+<!--BR pra fazer quebra de parágrafos-->
+<!--HR para criar uma linha horizontal e não tem fechamento-->
+<!--&#x -- Comando pra add emoji-->
+<!--Colocar imagem na ABA no canto esquerdo, digitar link:favicon e escolher o arquivo editado no favicon.cc e .io-->
+<!--LOREM -- Simula textos para parágrafos-->
+<!--h1 primeiro parágrafo, h2 segundo, h3 terceiro, h4 quarto até h6-->
+<!--Colocar endereço <ADDRESS>-->
+<!--HTML Semântica, significado. CSS estilo, forma...-->
+<!--Itálico -> <I> -->
+<!--Strong para NEGRITO - TAG Semântica-->
+<!--<!--Negrito com EM (semântica) - CRTL Shift P digita EM depois enter-- -->
+<!--MARK - Marcar o texto, ex caneta marca texto-->
+<!--Dentro da TAG mark consegue trocar a cor da marcação com STYLE backgroun-color-->
+<!--SUP (envelopar) CTRL + Shift + P - Simbolo como potência, acima do número-->
+<!--SUB (envelopar) CTRL + Shift + P - Fazer números como ex o símbolo do H2O, o 2 embaixo-->
+<!--INS (envelopar) - Riscar o texto - TAG semântica-->
+<!--CODE (envelopar) pra ajustar o espaçamento para as letras e espaços.-->
+<!--PRE (Envelopar) Serve para organizar, indentar o código, exibe na página programda e não somente no editor. PRA ORGANIZAR O CÓDIGO PRA ESQUERDA, SHIFT+TAB, SE QUISER MAIS PRA DIREITA SOMENTE TAB, MAS PRECISA SELECIONAR O CÓDIGO-->
+<!--Organiza a fonte tamanho e espaço de forma padrão. CODE pra ajustar o espaçamento para as letras e espaços. Fonte monoespaçada. PRA ORGANIZAR O CÓDIGO PRA ESQUERDA, SHIFT+TAB, SE QUISER MAIS PRA DIREITA SOMENTE TAB, MAS PRECISA SELECIONAR O CÓDIGO-->
+<!--Q (envelopar) para utilizar em citações, coloca entre ""-->
+<!--Serve para citações, faz o recuo, se for de algum site utilizar o CITE= e colocar o link, não exibirá na programação, mas estará na página indicando os criadores daquele conteúdo ou livro, etc...-->
+<!--ABBR (envelopar) Quando coloca o ponteiro do mouse sobre a silga aparece o seu significado-->
+<!--BDO R - Coloca o texto invertido-->
+<!--Ordena a lista e numera e caso necessário algum mudança, faz a alteração automáticamente sempre colocando nas palavras e frases que serão numeradas LI. OL (lista organizada) e dentro de OL LI-->
+<!--Caso queira mudar a letra ou o início da numeração TYPE (tipo e tamanho letra) e START (inicia a partir de tal número) OU invés de número fazer as ordens com letras, a, b c, mudando o TYPE para A ou a e se for números romanos, de I ou i-->
+<!--UL não precisa de ordem, apenas aparece as BOLINHAS na frente dos itens-->
+<!--TYPE DISC, SQUARE ou CIRCLE - muda a bolinha na frente dos itens descritos abaixo-->
+<!--DL depois abre DT e DD, serve para deslocar o texto abaixo como ex o tab.-->

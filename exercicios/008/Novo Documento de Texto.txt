@@ -1,0 +1,84 @@
+<!DOCTYPE html><!--Versão do editor, HTML5-->
+<html lang="pt-br"><!--Linguagem nativa do site-->
+<head>
+    <meta charset="UTF-8"> <!--Utilização de caracteres especiais e acentos-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Utilização de toda a tela do navegador linhas 6, 7 e 8 - Essa tag não tem fechamento-->
+    <meta name="viewport" //
+    content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="LogoImagemRDK/apple-touch-icon.png" type="image/x-icon"><!--ADICIONAR FAVICON - IMAGEM NA ABA NA PARTE SUPERIOR DO NAVEGADOR-->
+
+    <title>Formatação de textos</title> <!--Títutlo do arquivo -->
+    <style>
+        body {
+            background-color: rgb(218, 218, 221);
+        }
+    </style> <!--Comando para cor no fundo da tela-->
+
+    <style>
+        mark {
+            background-color: rgb(159, 159, 247);
+        }
+    </style><!--Esta forma de cor no grifado do texto serve para todos quando utilizado a TAG MARK somente para esta página e não outras-->
+    
+</head>
+<body>
+   <h1>Formatação de TEXTOS</h1>
+   <h2>Negrito / Destaque</h2>
+   <p>Nesta frase temos um <b>termo em NEGRITO</b> usando a TAG B (Não Semântica).</p>
+
+   <p>Nesta frase, tenho um <strong>em destaque</strong> usando a TAG Strong (Semântica)< /p> <!--Strong é o correto UITILIZAR-->
+
+    <H2>Itálico / Ênfase</H2>
+    <p>Nesta frase, temos um <i>TERMO EM ITÁLICO</i> usando a TAG I (não Semântica)</p>
+
+    <p>
+       Nesta frase, temos um <em>termo em ênfase</em> usando a TAG EM (Semântica) <!--Negrito com EM - CRTL Shift P digita EM depois enter-->
+    </p> 
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style="background-color: limegreen;">um texto marcado</mark> usando a tag MARK</p> <!--MARK - Marcar o texto, ex caneta marca texto-->
+    <!--Dentro da TAG mark consegue trocar a cor da marcação com STYLE backgroun-color, mas somente nesta linha. 
+    Se tiver mais códigos com cores precisa fazer para todos, ou colocar cor padrão no MARK no HEAD-->
+
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+
+    <p>Texto grande e pequeno</p>
+    <p>Estamos criando um <mark><big>TEXTO GRANDE</big></mark> e um <mark style="background-color: limegreen;"><small>TEXTO PEQUENO</small></mark></p>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p><!--INS - TAG semântica-->
+    <p>Existe também o <u>sublinhado</u> com a tag U</p><!--U - Tag não semântica-->
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p><!--Simbolo como potência, acima do número-->
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p><!--Fazer números como ex o símbolo do H2O, o 2 embaixo-->
+
+
+           
+</body>
+</html>
+<!--Comando para comentários-->
+<!---->
+<!--&lt; Menor que < LESS THAN -- Adicionar símbolo e no final   
+    &gt; GREATER THAN Maior que > ficaria assim &lt; Símbolo &gt;    --></p> <!--P para parágrafo-->
+<!--BR pra fazer quebra de parágrafos-->
+<!--HR para criar uma linha horizontal e não tem fechamento-->
+<!--&#x -- Comando pra add emoji-->
+<!--Colocar imagem na ABA no canto esquerdo, digitar link:favicon e escolher o arquivo editado no favicon.cc e .io-->
+<!--LOREM -- Simula textos para parágrafos-->
+<!--h1 primeiro parágrafo, h2 segundo, h3 terceiro, h4 quarto até h6-->
+<!--Colocar endereço <ADDRESS>-->
+<!--HTML Semântica, significado. CSS estilo, forma...-->
+<!--Itálico -> <I> -->
+<!--Strong para NEGRITO - TAG Semântica-->
+<!--<!--Negrito com EM (semântica) - CRTL Shift P digita EM depois enter-- -->
+<!--MARK - Marcar o texto, ex caneta marca texto-->
+<!--Dentro da TAG mark consegue trocar a cor da marcação com STYLE backgroun-color-->
+<!--SUP (envelopar) CTRL + Shift + P - Simbolo como potência, acima do número-->
+<!--SUB (envelopar) CTRL + Shift + P - Fazer números como ex o símbolo do H2O, o 2 embaixo-->
+<!--INS (envelopar) - Riscar o texto - TAG semântica-->

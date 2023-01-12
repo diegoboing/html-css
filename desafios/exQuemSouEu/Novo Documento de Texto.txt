@@ -1,0 +1,30 @@
+<!DOCTYPE html><!--Versão do editor, HTML5-->
+<html lang="pt-br"><!--Linguagem nativa do site-->
+<head>
+    <meta charset="UTF-8"> <!--Utilização de caracteres especiais e acentos-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Utilização de toda a tela do navegador linhas 6, 7 e 8 - Essa tag não tem fechamento-->
+    <meta name="viewport" //
+    content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="LogoImagemRDK/apple-touch-icon.png" type="image/x-icon"><!--ADICIONAR FAVICON - IMAGEM NA ABA NA PARTE SUPERIOR DO NAVEGADOR-->
+
+    <title>Quem sou eu?</title>
+  <head>
+    <body>
+        <h1>Minhas redes sociais</h1>
+        <p><strong>Quem sou eu?</strong></p>
+
+        <img src="LogoImagemRDK/android-chrome-192x192.png" alt="Minha Foto">
+        
+        <p>Meu nome é <strong>Diego Boing</strong>, tenho 34 anos e trabalho com informática há 15 anos. <br>Iniciei minha jornada numa empresa que distribui equipamentos de informática e através de suas necessidades tive a oportunidade de me qualificar, atendendo assim as exigências da função.</p>
+
+        <h1>Como falar comigo?</h1>
+        <ul>
+          <li><img src="LogoLetraRDK/favicon.ico" alt="YouTube"><a href="https://www.youtube.com/channel/UC5gvSZMCd6E6HwdVfugMACw" target="_blank" rel="externa1">Youtube.com/<strong>RDKeletronica</a></strong></li>
+          
+          <li><img src="LogoLetraRDK2/favicon.ico" alt="Instagram"><strong><a href="https://www.instagram.com/degogtr/" target="_blank" rel="external1">@RDKeletronica</a></strong></li>
+          
+          <li><img src="LogoLetraRDK3/favicon.ico" alt="FaceBook"><a href="https://www.facebook.com/profile.php?id=100010233668162" target="_blank" rel="external1">FaceBook.com/<strong>RDKeletronica</a></strong></li>
+        </ul>
+    </body>
+  </head>

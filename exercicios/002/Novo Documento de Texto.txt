@@ -1,0 +1,62 @@
+!DOCTYPE html!--Versão do editor, HTML5--
+html lang=pt-br!--Linguagem nativa do site--
+head
+    meta charset=UTF-8 !--Utilização de caracteres especiais e acentos--
+
+    meta http-equiv=X-UA-Compatible content=IE=edge !--Utilização de toda a tela do navegador linhas 6, 7 e 8 - Essa tag não tem fechamento--
+    meta name=viewport 
+    content=width=device-width, initial-scale=1.0 
+
+    titlePARÁGRAFOStitle !--Títutlo do arquivo --
+
+head
+body
+    h1Parágrafos e quebras de linhash1 !--Título--
+    hr!--HR para criar uma linha horizontal e não tem fechamento--
+
+    pVocê pode escrever um parágrafo de qualquer jeito &lt;p&gt; e  &lt;p&gt;
+    !--&lt; Menor que  Adicionar símbolo e no final&gt; Maior que  ficaria assim &lt; Símbolo &gt;    --p !--P para parágrafo--
+
+    pEste é um momento único! Estou brcriando um site...p!--BR pra fazer quebra de parágrafos--
+
+    pCOMANDOS DE
+        pmarca registrada e copy right
+        &reg; !--Símbolo marca registrada--
+        &copy; !--Copy Right--
+        &trade;!--TradeMark - marca registrada em inglês--
+
+        pmoedas
+            &euro;!--Euro--
+            &pound;
+            &yen;
+            &real;
+            &dollar;p
+        
+
+        Outros símbolos
+        &Delta;!--Delta--
+        &uparrow;!--Seta pra cima--
+        &#64;
+        &#8470;
+        &#38;
+        &cudarrr;
+
+        pCOMANDOS EMOJI
+            &#x1F92A; !--&#x  comando pra add emoji, o restante do código é no site emojipedia--
+            &#x1F3B8;
+            &#x1F4AF;
+        p
+     
+
+    p
+   
+    
+body
+html
+!--Comando para comentários--
+!----
+!--&lt; Menor que  LESS THAN -- Adicionar símbolo e no final   
+    &gt; GREATER THAN Maior que  ficaria assim &lt; Símbolo &gt;    --p !--P para parágrafo--
+!--BR pra fazer quebra de parágrafos--
+!--HR para criar uma linha horizontal e não tem fechamento--
+!--&#x -- Comando pra add emoji--
